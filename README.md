@@ -35,6 +35,16 @@ yarn test --watchAll // Watch files for changes and rerun every test.
 yarn test --testRegex "String calculator spec*" //Executes tests matching with the regex passed as param.
 ```
 
+## Error reporting:
+
+Reporting errors or crashes as issues is always useful and worth it :bug: However, if we can find some errors and report it automatically our lives as developers will be easier. That's why this repository is configured to use [Sentry](https://sentry.io/) to report all the not handled exceptions for us. In order to configure Sentry to report errors for you only need to create two files named ``.env.development`` and ```.env.production`` in the root folder and add the following content:
+
+```
+REACT_APP_SENTRY_KEY = "YOUR SENTRY REFERENCE FOUND WHEN CREATING A NEW PROJECT"
+```
+
+You can find the the Sentry key after creating the project in their site.
+
 ## Linter:
 
 This repository uses [eslint](https://eslint.org/) in order to check if the js code written matches the checkstyle configured. You can check if everything is ok by executing ``yarn lint`` and automatically fix the issues by executing ``yarn fixLint`` if needed.
