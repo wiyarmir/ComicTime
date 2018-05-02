@@ -20,6 +20,8 @@ Generated using [https://coolors.co](https://coolors.co) and moved to material d
 * Secondary color dark: #c8a20a
 * Text on primary color: #000000
 * Text on secondary color: #000000
+* Window background color: #EDECEC
+* Cards and papers background color: #FFFFFF
 
 ## Design schema
 
