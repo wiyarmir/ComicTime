@@ -45,6 +45,16 @@ REACT_APP_SENTRY_KEY = "YOUR SENTRY REFERENCE FOUND WHEN CREATING A NEW PROJECT"
 
 You can find the the Sentry key after creating the project in their site.
 
+## Analytics:
+
+Knowledge is power, and I'm sure we'd like to know how our users move around Comic Time. That's why we've configured [Google Analytics](https://analytics.google.com) and tracked every movement in our application. To configure Google Analytics to report stats for you only need to create two files named ``.env.development`` and ```.env.production`` in the root folder and add the following content:
+
+```
+REACT_APP_GOOGLE_ANALYTICS_TRACKING_NUMBER = "YOUR GOOGLE ANALYTICS TRACKING NUMBER"
+```
+
+You can find the the Goolge Analytics tracking number after creating the project in their site.
+
 ## Linter:
 
 This repository uses [eslint](https://eslint.org/) in order to check if the js code written matches the checkstyle configured. You can check if everything is ok by executing ``yarn lint`` and automatically fix the issues by executing ``yarn fixLint`` if needed.
