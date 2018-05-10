@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar renders the navigation bar using the app logo as left icon and the configured title by default 1`] = `
+<div>
+  <AppBar
+    iconElementLeft={
+      <IconButton
+        disableTouchRipple={false}
+        disabled={false}
+        iconStyle={Object {}}
+        tooltipPosition="bottom-center"
+        touch={false}
+      >
+        <ComicTimeLogo />
+      </IconButton>
+    }
+    onLeftIconButtonClick={[Function]}
+    showMenuIconButton={true}
+    style={
+      Object {
+        "position": "fixed",
+        "top": 0,
+      }
+    }
+    title="Title"
+    zDepth={1}
+  />
+</div>
+`;
+
+exports[`NavigationBar renders the navigation bar using the back button instead of the logo as left icon if the param showBackButton is true 1`] = `
+<div>
+  <AppBar
+    iconElementLeft={
+      <IconButton
+        disableTouchRipple={false}
+        disabled={false}
+        iconStyle={Object {}}
+        tooltipPosition="bottom-center"
+        touch={false}
+      >
+        <NavigationArrowBack />
+      </IconButton>
+    }
+    onLeftIconButtonClick={[Function]}
+    showMenuIconButton={true}
+    style={
+      Object {
+        "position": "fixed",
+        "top": 0,
+      }
+    }
+    title="Title"
+    zDepth={1}
+  />
+</div>
+`;

@@ -1,6 +1,7 @@
 import { get } from "../../apiClient/apiClient";
 import { Page, PublicationSummary } from "../model";
 import cheerio from "cheerio";
+import { v4 } from "node-uuid";
 
 export async function getFeedPage(page = 1) {
   return get(`/latest-release?page=${page}`).then(response => {
@@ -20,7 +21,7 @@ function extractPublicationsFromPage(page, htmlPage) {
 function extractTotalPages(page) {
   const pageLinks = page(".pagination a");
   let rawLastPage = pageLinks.eq(pageLinks.length - 2).html();
-  const maxPageValue = parseInt(rawLastPage);
+  const maxPageValue = parseInt(rawLastPage, 10);
   return Number.isInteger(maxPageValue) ? maxPageValue : 0;
 }
 
@@ -31,17 +32,32 @@ function extractPublications(page) {
     const publicationLoaded = cheerio.load(this);
     const publicationSummary = publicationLoaded("h3 a");
     const publicationUrl = publicationSummary.attr("href");
-    const publicationId = publicationUrl.substring(
+    const publicationPath = publicationUrl.substring(
       publicationUrl.lastIndexOf("/") + 1,
       publicationUrl.length
     );
-    const title = publicationSummary.html();
+    const publicationId = v4();
+    const title = publicationSummary.text();
+    const lastIssuesTitles = extractLastIssuesTitles(publicationLoaded);
+    const cover = extractCoverFromPublicationPath(publicationPath);
+    const smallTags = publicationLoaded("small");
+    const releaseDate = smallTags
+      .first()
+      .text()
+      .trim();
+    const publisher = smallTags
+      .last()
+      .text()
+      .trim();
     const publication = new PublicationSummary(
       publicationId,
       publicationUrl,
+      publicationPath,
       title,
-      extractLastIssuesTitles(publicationLoaded),
-      extractCoverFromPublicationId(publicationId)
+      lastIssuesTitles,
+      cover,
+      releaseDate,
+      publisher
     );
     publications.push(publication);
   });
@@ -59,6 +75,6 @@ function extractLastIssuesTitles(publicationLoaded) {
   return issues;
 }
 
-function extractCoverFromPublicationId(publicationId) {
-  return `http://readcomicsonline.ru/uploads/manga/${publicationId}/cover/cover_250x350.jpg`;
+function extractCoverFromPublicationPath(publicationPath) {
+  return `http://readcomicsonline.ru/uploads/manga/${publicationPath}/cover/cover_250x350.jpg`;
 }

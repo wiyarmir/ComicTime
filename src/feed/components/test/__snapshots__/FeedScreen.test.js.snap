@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeedScreen renders a list of publications if it is not loading 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <NavigationBar
+    title="appName"
+  />
+  <Scrollbars
+    autoHeight={false}
+    autoHeightMax={200}
+    autoHeightMin={0}
+    autoHide={false}
+    autoHideDuration={200}
+    autoHideTimeout={1000}
+    hideTracksWhenNotNeeded={false}
+    onScrollFrame={[Function]}
+    renderThumbHorizontal={[Function]}
+    renderThumbVertical={[Function]}
+    renderTrackHorizontal={[Function]}
+    renderTrackVertical={[Function]}
+    renderView={[Function]}
+    style={
+      Object {
+        "marginTop": 62,
+      }
+    }
+    tagName="div"
+    thumbMinSize={30}
+    universal={false}
+  >
+    <PublicationsFeed
+      publications={
+        Array [
+          PublicationSummary {
+            "id": "uuid1",
+            "image": "http://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg",
+            "lastIssuesNumbers": Array [
+              "#1",
+            ],
+            "lastIssuesTitles": Array [
+              "deadpool (2017) #1",
+            ],
+            "path": "deadpool-2017",
+            "publisher": "Marvel",
+            "releaseDate": "20/1/2017",
+            "title": "deadpool (2017)",
+            "url": "http://readcomicsonline.ru/comic/deadpool-2017",
+          },
+          PublicationSummary {
+            "id": "uuid2",
+            "image": "http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg",
+            "lastIssuesNumbers": Array [
+              "#2",
+            ],
+            "lastIssuesTitles": Array [
+              "Volcanosaurus (2017) #2",
+            ],
+            "path": "volcanosaurus-2017",
+            "publisher": "American Mythology",
+            "releaseDate": "04/5/2018",
+            "title": "Volcanosaurus (2017)",
+            "url": "http://readcomicsonline.ru/comic/volcanosaurus-2017",
+          },
+        ]
+      }
+    />
+  </Scrollbars>
+</div>
+`;
+
+exports[`FeedScreen renders the progress bar if it is loading 1`] = `<ProgressBar />`;

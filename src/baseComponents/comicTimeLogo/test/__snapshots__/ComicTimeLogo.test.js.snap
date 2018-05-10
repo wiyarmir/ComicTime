@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicTimeLogo renders the application comicTimeLogo as an image 1`] = `
+<ComicTimeLogo
+  t={[Function]}
+>
+  <img
+    alt="appLogo"
+    src="logo.svg"
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": "50%",
+      }
+    }
+  />
+</ComicTimeLogo>
+`;

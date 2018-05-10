@@ -1,3 +1,4 @@
+import "../../../testUtils/dummyNodeUuid";
 import nock from "nock";
 import { getFeedPage } from "../feedApiClient";
 import { baseUrl, composeResourceUrl } from "../../../apiClient/apiClient";
@@ -38,15 +39,20 @@ describe("Feed API Client", () => {
     expect(feedPage.page).toEqual(page);
     expect(feedPage.totalPages).toEqual(122);
     expect(feedPage.data.length).toEqual(98);
-    expect(feedPage.data[0]).toEqual(
+    const firstPublication = feedPage.data[0];
+    expect(firstPublication).toEqual(
       new PublicationSummary(
-        "volcanosaurus-2017",
+        "uuid",
         "http://readcomicsonline.ru/comic/volcanosaurus-2017",
+        "volcanosaurus-2017",
         "Volcanosaurus (2017)",
         ["Volcanosaurus (2017) #2"],
-        "http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg"
+        "http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg",
+        "04/5/2018",
+        "American Mythology"
       )
     );
+    expect(firstPublication.lastIssuesNumbers).toEqual(["#2"]);
   });
 
   it("returns a page with all the publications found", async () => {

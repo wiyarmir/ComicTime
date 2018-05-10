@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LazyImage renders the image configured using the configured parameters 1`] = `
+<LazyImage
+  alt="Alternative text"
+  height={200}
+  placeholder="https://images.com/2"
+  src="https://images.com/1"
+>
+  <LazyLoad
+    debounce={true}
+    elementType="div"
+    height={200}
+    offset={0}
+    offsetBottom={0}
+    offsetHorizontal={0}
+    offsetLeft={0}
+    offsetRight={0}
+    offsetTop={200}
+    offsetVertical={0}
+    throttle={100}
+  >
+    <div
+      className="LazyLoad"
+      style={
+        Object {
+          "height": 200,
+          "width": undefined,
+        }
+      }
+    />
+  </LazyLoad>
+</LazyImage>
+`;

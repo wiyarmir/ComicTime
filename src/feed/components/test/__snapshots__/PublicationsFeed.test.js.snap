@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PublicationsFeed renders an empty publications feed 1`] = `
+<GridList
+  cellHeight={358.4}
+  cols={4}
+  padding={4}
+/>
+`;
+
+exports[`PublicationsFeed renders the publication feed based on the list of publications passed as props 1`] = `
+<GridList
+  cellHeight={358.4}
+  cols={4}
+  padding={4}
+>
+  <GridTile
+    actionPosition="right"
+    cols={1}
+    containerElement="div"
+    key="0"
+    rows={1}
+    subtitle={
+      <span>
+        <b>
+          #1
+        </b>
+         - 
+        20/1/2017
+      </span>
+    }
+    title="deadpool (2017)"
+    titleBackground="rgba(0, 0, 0, 0.4)"
+    titlePosition="bottom"
+  >
+    <LazyImage
+      alt="deadpool (2017)"
+      height={358.4}
+      placeholder="http://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg"
+      src="http://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg"
+    />
+  </GridTile>
+  <GridTile
+    actionPosition="right"
+    cols={1}
+    containerElement="div"
+    key="1"
+    rows={1}
+    subtitle={
+      <span>
+        <b>
+          #2
+        </b>
+         - 
+        04/5/2018
+      </span>
+    }
+    title="Volcanosaurus (2017)"
+    titleBackground="rgba(0, 0, 0, 0.4)"
+    titlePosition="bottom"
+  >
+    <LazyImage
+      alt="Volcanosaurus (2017)"
+      height={358.4}
+      placeholder="http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg"
+      src="http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg"
+    />
+  </GridTile>
+</GridList>
+`;

@@ -4,886 +4,1480 @@ exports[`Feed API Client returns a page with all the publications found 1`] = `
 Page {
   "data": Array [
     PublicationSummary {
-      "id": "volcanosaurus-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Volcanosaurus (2017) #2",
       ],
+      "path": "volcanosaurus-2017",
+      "publisher": "American Mythology",
+      "releaseDate": "04/5/2018",
       "title": "Volcanosaurus (2017)",
       "url": "http://readcomicsonline.ru/comic/volcanosaurus-2017",
     },
     PublicationSummary {
-      "id": "bombshells-united-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/bombshells-united-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#37",
+      ],
+      "lastIssuesTitles": Array [
         "Bombshells: United (2017-) #37",
       ],
+      "path": "bombshells-united-2017",
+      "publisher": "DC Comics",
+      "releaseDate": "04/5/2018",
       "title": "Bombshells: United (2017-)",
       "url": "http://readcomicsonline.ru/comic/bombshells-united-2017",
     },
     PublicationSummary {
-      "id": "belladonna-fire-fury-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/belladonna-fire-fury-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Belladonna Fire Fury (2017) #5",
       ],
+      "path": "belladonna-fire-fury-2017",
+      "publisher": "Boundless",
+      "releaseDate": "04/5/2018",
       "title": "Belladonna Fire Fury (2017)",
       "url": "http://readcomicsonline.ru/comic/belladonna-fire-fury-2017",
     },
     PublicationSummary {
-      "id": "adventure-time-2012",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/adventure-time-2012/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#74",
+      ],
+      "lastIssuesTitles": Array [
         "Adventure Time (2012-) #74",
       ],
+      "path": "adventure-time-2012",
+      "publisher": "Boom Studios",
+      "releaseDate": "04/5/2018",
       "title": "Adventure Time (2012-)",
       "url": "http://readcomicsonline.ru/comic/adventure-time-2012",
     },
     PublicationSummary {
-      "id": "teether-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/teether-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Teether (2018) #1",
       ],
+      "path": "teether-2018",
+      "publisher": "Antartic Press",
+      "releaseDate": "03/5/2018",
       "title": "Teether (2018)",
       "url": "http://readcomicsonline.ru/comic/teether-2018",
     },
     PublicationSummary {
-      "id": "teen-titans-go-2013",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/teen-titans-go-2013/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#55",
+      ],
+      "lastIssuesTitles": Array [
         "Teen Titans Go! (2013) #55",
       ],
+      "path": "teen-titans-go-2013",
+      "publisher": "DC Comics",
+      "releaseDate": "03/5/2018",
       "title": "Teen Titans Go! (2013)",
       "url": "http://readcomicsonline.ru/comic/teen-titans-go-2013",
     },
     PublicationSummary {
-      "id": "portalbound-vol-1-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/portalbound-vol-1-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Portal Bound Vol. 1 (2018) #2",
       ],
+      "path": "portalbound-vol-1-2018",
+      "publisher": "Aspen",
+      "releaseDate": "03/5/2018",
       "title": "Portal Bound Vol. 1 (2018)",
       "url": "http://readcomicsonline.ru/comic/portalbound-vol-1-2018",
     },
     PublicationSummary {
-      "id": "swashbucklers-the-saga-continues-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/swashbucklers-the-saga-continues-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Swashbucklers: The Saga Continues (2018-) #2",
       ],
+      "path": "swashbucklers-the-saga-continues-2018",
+      "publisher": "Dynamite",
+      "releaseDate": "02/5/2018",
       "title": "Swashbucklers: The Saga Continues (2018-)",
       "url": "http://readcomicsonline.ru/comic/swashbucklers-the-saga-continues-2018",
     },
     PublicationSummary {
-      "id": "spawn-1992",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/spawn-1992/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#285",
+      ],
+      "lastIssuesTitles": Array [
         "Spawn (1992-) #285",
       ],
+      "path": "spawn-1992",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
       "title": "Spawn (1992-)",
       "url": "http://readcomicsonline.ru/comic/spawn-1992",
     },
     PublicationSummary {
-      "id": "dark-ark-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/dark-ark-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#6",
+      ],
+      "lastIssuesTitles": Array [
         "Dark Ark (2017) #6",
       ],
+      "path": "dark-ark-2017",
+      "publisher": "Aftershock Comics",
+      "releaseDate": "02/5/2018",
       "title": "Dark Ark (2017)",
       "url": "http://readcomicsonline.ru/comic/dark-ark-2017",
     },
     PublicationSummary {
-      "id": "betty-veronica-best-friends-forever-at-movies-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/betty-veronica-best-friends-forever-at-movies-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Betty & Veronica Best Friends Forever: At Movies (2018) #1",
       ],
-      "title": "Betty &amp; Veronica Best Friends Forever: At Movies (2018)",
+      "path": "betty-veronica-best-friends-forever-at-movies-2018",
+      "publisher": "Archie",
+      "releaseDate": "02/5/2018",
+      "title": "Betty & Veronica Best Friends Forever: At Movies (2018)",
       "url": "http://readcomicsonline.ru/comic/betty-veronica-best-friends-forever-at-movies-2018",
     },
     PublicationSummary {
-      "id": "sherlock-holmes-the-vanishing-man-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/sherlock-holmes-the-vanishing-man-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Sherlock Holmes: The Vanishing Man (2018-) #1",
       ],
+      "path": "sherlock-holmes-the-vanishing-man-2018",
+      "publisher": "Dynamite",
+      "releaseDate": "02/5/2018",
       "title": "Sherlock Holmes: The Vanishing Man (2018-)",
       "url": "http://readcomicsonline.ru/comic/sherlock-holmes-the-vanishing-man-2018",
     },
     PublicationSummary {
-      "id": "red-sonjatarzan-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/red-sonjatarzan-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Red Sonja/Tarzan (2018-) #1",
       ],
+      "path": "red-sonjatarzan-2018",
+      "publisher": "Dynamite",
+      "releaseDate": "02/5/2018",
       "title": "Red Sonja/Tarzan (2018-)",
       "url": "http://readcomicsonline.ru/comic/red-sonjatarzan-2018",
     },
     PublicationSummary {
-      "id": "red-sonja-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/red-sonja-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#15",
+      ],
+      "lastIssuesTitles": Array [
         "Red Sonja (2016-) #15",
       ],
+      "path": "red-sonja-2016",
+      "publisher": "Dynamite",
+      "releaseDate": "02/5/2018",
       "title": "Red Sonja (2016-)",
       "url": "http://readcomicsonline.ru/comic/red-sonja-2016",
     },
     PublicationSummary {
-      "id": "oz-the-wizard-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/oz-the-wizard-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Oz: The Wizard (2018-) #1",
       ],
+      "path": "oz-the-wizard-2018",
+      "publisher": "Zenescope",
+      "releaseDate": "02/5/2018",
       "title": "Oz: The Wizard (2018-)",
       "url": "http://readcomicsonline.ru/comic/oz-the-wizard-2018",
     },
     PublicationSummary {
-      "id": "jasmine-crown-of-kings-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/jasmine-crown-of-kings-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Jasmine: Crown of Kings (2018-) #1",
       ],
+      "path": "jasmine-crown-of-kings-2018",
+      "publisher": "Zenescope",
+      "releaseDate": "02/5/2018",
       "title": "Jasmine: Crown of Kings (2018-)",
       "url": "http://readcomicsonline.ru/comic/jasmine-crown-of-kings-2018",
     },
     PublicationSummary {
-      "id": "harbinger-wars-2-prelude-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/harbinger-wars-2-prelude-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Harbinger Wars 2: Prelude (2018-) #1",
       ],
+      "path": "harbinger-wars-2-prelude-2018",
+      "publisher": "Valiant",
+      "releaseDate": "02/5/2018",
       "title": "Harbinger Wars 2: Prelude (2018-)",
       "url": "http://readcomicsonline.ru/comic/harbinger-wars-2-prelude-2018",
     },
     PublicationSummary {
-      "id": "gi-joe-a-real-american-hero-2011",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/gi-joe-a-real-american-hero-2011/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#251",
+      ],
+      "lastIssuesTitles": Array [
         "G.I. Joe: A Real American Hero (2011-) #251",
       ],
+      "path": "gi-joe-a-real-american-hero-2011",
+      "publisher": "IDW",
+      "releaseDate": "02/5/2018",
       "title": "G.I. Joe: A Real American Hero (2011-)",
       "url": "http://readcomicsonline.ru/comic/gi-joe-a-real-american-hero-2011",
     },
     PublicationSummary {
-      "id": "star-wars-2015",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/star-wars-2015/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#47",
+      ],
+      "lastIssuesTitles": Array [
         "Star Wars (2015-) #47",
       ],
+      "path": "star-wars-2015",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Star Wars (2015-)",
       "url": "http://readcomicsonline.ru/comic/star-wars-2015",
     },
     PublicationSummary {
-      "id": "zodiac-starforce-cries-of-the-fire-prince-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/zodiac-starforce-cries-of-the-fire-prince-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#4",
+      ],
+      "lastIssuesTitles": Array [
         "Zodiac Starforce: Cries of the Fire Prince (2017) #4",
       ],
+      "path": "zodiac-starforce-cries-of-the-fire-prince-2017",
+      "publisher": "Dark Horse",
+      "releaseDate": "02/5/2018",
       "title": "Zodiac Starforce: Cries of the Fire Prince (2017)",
       "url": "http://readcomicsonline.ru/comic/zodiac-starforce-cries-of-the-fire-prince-2017",
     },
     PublicationSummary {
-      "id": "avengers-back-to-basics-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/avengers-back-to-basics-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Avengers: Back To Basics (2018) #5",
       ],
+      "path": "avengers-back-to-basics-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Avengers: Back To Basics (2018)",
       "url": "http://readcomicsonline.ru/comic/avengers-back-to-basics-2018",
     },
     PublicationSummary {
-      "id": "you-are-deadpool-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/you-are-deadpool-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "You Are Deadpool (2018) #1",
       ],
+      "path": "you-are-deadpool-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "You Are Deadpool (2018)",
       "url": "http://readcomicsonline.ru/comic/you-are-deadpool-2018",
     },
     PublicationSummary {
-      "id": "xmen-gold-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/xmen-gold-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#27",
+      ],
+      "lastIssuesTitles": Array [
         "X-Men Gold (2017) #27",
       ],
+      "path": "xmen-gold-2017",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "X-Men Gold (2017)",
       "url": "http://readcomicsonline.ru/comic/xmen-gold-2017",
     },
     PublicationSummary {
-      "id": "xerxes-the-fall-of-the-house-of-darius-and-the-rise-of-alexander-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/xerxes-the-fall-of-the-house-of-darius-and-the-rise-of-alexander-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Xerxes: The Fall of the House of Darius and the Rise of Alexander (2018-) #2",
       ],
+      "path": "xerxes-the-fall-of-the-house-of-darius-and-the-rise-of-alexander-2018",
+      "publisher": "Dark Horse",
+      "releaseDate": "02/5/2018",
       "title": "Xerxes: The Fall of the House of Darius and the Rise of Alexander (2018-)",
       "url": "http://readcomicsonline.ru/comic/xerxes-the-fall-of-the-house-of-darius-and-the-rise-of-alexander-2018",
     },
     PublicationSummary {
-      "id": "weapon-x-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/weapon-x-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#17",
+      ],
+      "lastIssuesTitles": Array [
         "Weapon X (2017-) #17",
       ],
+      "path": "weapon-x-2017",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Weapon X (2017-)",
       "url": "http://readcomicsonline.ru/comic/weapon-x-2017",
     },
     PublicationSummary {
-      "id": "venomized-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/venomized-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Venomized (2018) #5",
       ],
+      "path": "venomized-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Venomized (2018)",
       "url": "http://readcomicsonline.ru/comic/venomized-2018",
     },
     PublicationSummary {
-      "id": "transformers-vs-the-visionaries-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/transformers-vs-the-visionaries-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Transformers Vs The Visionaries (2018) #5",
       ],
+      "path": "transformers-vs-the-visionaries-2018",
+      "publisher": "IDW",
+      "releaseDate": "02/5/2018",
       "title": "Transformers Vs The Visionaries (2018)",
       "url": "http://readcomicsonline.ru/comic/transformers-vs-the-visionaries-2018",
     },
     PublicationSummary {
-      "id": "the-walking-dead-2003",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/the-walking-dead-2003/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#179",
+      ],
+      "lastIssuesTitles": Array [
         "The Walking Dead (2003-) #179",
       ],
+      "path": "the-walking-dead-2003",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
       "title": "The Walking Dead (2003-)",
       "url": "http://readcomicsonline.ru/comic/the-walking-dead-2003",
     },
     PublicationSummary {
-      "id": "the-gravediggers-union-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/the-gravediggers-union-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#6",
+      ],
+      "lastIssuesTitles": Array [
         "The Gravediggers Union (2017) #6",
       ],
+      "path": "the-gravediggers-union-2017",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
       "title": "The Gravediggers Union (2017)",
       "url": "http://readcomicsonline.ru/comic/the-gravediggers-union-2017",
     },
     PublicationSummary {
-      "id": "the-curse-of-brimstone-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/the-curse-of-brimstone-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "The Curse of Brimstone (2018-) #2",
       ],
+      "path": "the-curse-of-brimstone-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "The Curse of Brimstone (2018-)",
       "url": "http://readcomicsonline.ru/comic/the-curse-of-brimstone-2018",
     },
     PublicationSummary {
-      "id": "suicide-squad-hell-to-pay-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/suicide-squad-hell-to-pay-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#7",
+      ],
+      "lastIssuesTitles": Array [
         "Suicide Squad: Hell to Pay (2018-) #7",
       ],
+      "path": "suicide-squad-hell-to-pay-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Suicide Squad: Hell to Pay (2018-)",
       "url": "http://readcomicsonline.ru/comic/suicide-squad-hell-to-pay-2018",
     },
     PublicationSummary {
-      "id": "stray-bullets-sunshine-roses-2015",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/stray-bullets-sunshine-roses-2015/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#34",
+      ],
+      "lastIssuesTitles": Array [
         "Stray Bullets: Sunshine & Roses (2015-) #34",
       ],
-      "title": "Stray Bullets: Sunshine &amp; Roses (2015-)",
+      "path": "stray-bullets-sunshine-roses-2015",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
+      "title": "Stray Bullets: Sunshine & Roses (2015-)",
       "url": "http://readcomicsonline.ru/comic/stray-bullets-sunshine-roses-2015",
     },
     PublicationSummary {
-      "id": "star-wars-tag-and-bink-were-here-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/star-wars-tag-and-bink-were-here-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Star Wars: Tag And Bink Were Here (2018) #1",
       ],
+      "path": "star-wars-tag-and-bink-were-here-2018",
+      "publisher": "One Shots & TPBs
+                                , 
+                                                                                                Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Star Wars: Tag And Bink Were Here (2018)",
       "url": "http://readcomicsonline.ru/comic/star-wars-tag-and-bink-were-here-2018",
     },
     PublicationSummary {
-      "id": "spiderman-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/spiderman-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#240",
+      ],
+      "lastIssuesTitles": Array [
         "Spider-Man (2016-) #240",
       ],
+      "path": "spiderman-2016",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Spider-Man (2016-)",
       "url": "http://readcomicsonline.ru/comic/spiderman-2016",
     },
     PublicationSummary {
-      "id": "shade-the-changing-woman-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/shade-the-changing-woman-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "Shade, The Changing Woman (2018-) #3",
       ],
+      "path": "shade-the-changing-woman-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Shade, The Changing Woman (2018-)",
       "url": "http://readcomicsonline.ru/comic/shade-the-changing-woman-2018",
     },
     PublicationSummary {
-      "id": "shield-by-hickman-weaver-the-rebirth-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/shield-by-hickman-weaver-the-rebirth-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "S.H.I.E.L.D. by Hickman & Weaver: The Rebirth (2018) #1",
       ],
-      "title": "S.H.I.E.L.D. by Hickman &amp; Weaver: The Rebirth (2018)",
+      "path": "shield-by-hickman-weaver-the-rebirth-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
+      "title": "S.H.I.E.L.D. by Hickman & Weaver: The Rebirth (2018)",
       "url": "http://readcomicsonline.ru/comic/shield-by-hickman-weaver-the-rebirth-2018",
     },
     PublicationSummary {
-      "id": "rogue-gambit-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/rogue-gambit-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Rogue & Gambit (2018) #5",
       ],
-      "title": "Rogue &amp; Gambit (2018)",
+      "path": "rogue-gambit-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
+      "title": "Rogue & Gambit (2018)",
       "url": "http://readcomicsonline.ru/comic/rogue-gambit-2018",
     },
     PublicationSummary {
-      "id": "rise-of-the-black-panther-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/rise-of-the-black-panther-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Rise of the Black Panther (2018) #5",
       ],
+      "path": "rise-of-the-black-panther-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Rise of the Black Panther (2018)",
       "url": "http://readcomicsonline.ru/comic/rise-of-the-black-panther-2018",
     },
     PublicationSummary {
-      "id": "rick-veitchs-the-one-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/rick-veitchs-the-one-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#4",
+      ],
+      "lastIssuesTitles": Array [
         "Rick Veitch's The One (2018) #4",
       ],
-      "title": "Rick Veitch&apos;s The One (2018)",
+      "path": "rick-veitchs-the-one-2018",
+      "publisher": "IDW",
+      "releaseDate": "02/5/2018",
+      "title": "Rick Veitch's The One (2018)",
       "url": "http://readcomicsonline.ru/comic/rick-veitchs-the-one-2018",
     },
     PublicationSummary {
-      "id": "the-october-faction-supernatural-dreams-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/the-october-faction-supernatural-dreams-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "The October Faction: Supernatural Dreams (2018) #3",
       ],
+      "path": "the-october-faction-supernatural-dreams-2018",
+      "publisher": "IDW",
+      "releaseDate": "02/5/2018",
       "title": "The October Faction: Supernatural Dreams (2018)",
       "url": "http://readcomicsonline.ru/comic/the-october-faction-supernatural-dreams-2018",
     },
     PublicationSummary {
-      "id": "nightwing-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/nightwing-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#44",
+      ],
+      "lastIssuesTitles": Array [
         "Nightwing (2016-) #44",
       ],
+      "path": "nightwing-2016",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Nightwing (2016-)",
       "url": "http://readcomicsonline.ru/comic/nightwing-2016",
     },
     PublicationSummary {
-      "id": "kull-eternal-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/kull-eternal-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "Kull Eternal (2017) #3",
       ],
+      "path": "kull-eternal-2017",
+      "publisher": "IDW",
+      "releaseDate": "02/5/2018",
       "title": "Kull Eternal (2017)",
       "url": "http://readcomicsonline.ru/comic/kull-eternal-2017",
     },
     PublicationSummary {
-      "id": "koshchei-the-deathless-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/koshchei-the-deathless-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Koshchei the Deathless (2018) #5",
       ],
+      "path": "koshchei-the-deathless-2018",
+      "publisher": "Dark Horse",
+      "releaseDate": "02/5/2018",
       "title": "Koshchei the Deathless (2018)",
       "url": "http://readcomicsonline.ru/comic/koshchei-the-deathless-2018",
     },
     PublicationSummary {
-      "id": "infinity-countdown-2018-",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/infinity-countdown-2018-/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "Infinity Countdown (2018-)  #3",
       ],
+      "path": "infinity-countdown-2018-",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Infinity Countdown (2018-) ",
       "url": "http://readcomicsonline.ru/comic/infinity-countdown-2018-",
     },
     PublicationSummary {
-      "id": "hunt-for-wolverine-weapon-lost-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/hunt-for-wolverine-weapon-lost-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Hunt For Wolverine: Weapon Lost (2018) #1",
       ],
+      "path": "hunt-for-wolverine-weapon-lost-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Hunt For Wolverine: Weapon Lost (2018)",
       "url": "http://readcomicsonline.ru/comic/hunt-for-wolverine-weapon-lost-2018",
     },
     PublicationSummary {
-      "id": "harley-quinn-harley-loves-joker-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/harley-quinn-harley-loves-joker-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Harley Quinn: Harley Loves Joker (2018-) #1",
       ],
+      "path": "harley-quinn-harley-loves-joker-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Harley Quinn: Harley Loves Joker (2018-)",
       "url": "http://readcomicsonline.ru/comic/harley-quinn-harley-loves-joker-2018",
     },
     PublicationSummary {
-      "id": "green-arrow-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/green-arrow-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#40",
+      ],
+      "lastIssuesTitles": Array [
         "Green Arrow (2016-) #40",
       ],
+      "path": "green-arrow-2016",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Green Arrow (2016-)",
       "url": "http://readcomicsonline.ru/comic/green-arrow-2016",
     },
     PublicationSummary {
-      "id": "giant-days-2015",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/giant-days-2015/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#38",
+      ],
+      "lastIssuesTitles": Array [
         "Giant Days (2015-) #38",
       ],
+      "path": "giant-days-2015",
+      "publisher": "Boom Studios",
+      "releaseDate": "02/5/2018",
       "title": "Giant Days (2015-)",
       "url": "http://readcomicsonline.ru/comic/giant-days-2015",
     },
     PublicationSummary {
-      "id": "exit-stage-left-the-snagglepuss-chronicles-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/exit-stage-left-the-snagglepuss-chronicles-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "Exit Stage Left: The Snagglepuss Chronicles (2018-) #5",
       ],
+      "path": "exit-stage-left-the-snagglepuss-chronicles-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Exit Stage Left: The Snagglepuss Chronicles (2018-)",
       "url": "http://readcomicsonline.ru/comic/exit-stage-left-the-snagglepuss-chronicles-2018",
     },
     PublicationSummary {
-      "id": "doctor-star-and-the-kingdom-of-lost-tomorrows-from-the-world-of-black-hammer-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/doctor-star-and-the-kingdom-of-lost-tomorrows-from-the-world-of-black-hammer-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "Doctor Star and the Kingdom of Lost Tomorrows: From the World of Black Hammer (2018) #3",
       ],
+      "path": "doctor-star-and-the-kingdom-of-lost-tomorrows-from-the-world-of-black-hammer-2018",
+      "publisher": "Dark Horse",
+      "releaseDate": "02/5/2018",
       "title": "Doctor Star and the Kingdom of Lost Tomorrows: From the World of Black Hammer (2018)",
       "url": "http://readcomicsonline.ru/comic/doctor-star-and-the-kingdom-of-lost-tomorrows-from-the-world-of-black-hammer-2018",
     },
     PublicationSummary {
-      "id": "deathstroke-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/deathstroke-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#31",
+      ],
+      "lastIssuesTitles": Array [
         "Deathstroke (2016-) #31",
       ],
+      "path": "deathstroke-2016",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Deathstroke (2016-)",
       "url": "http://readcomicsonline.ru/comic/deathstroke-2016",
     },
     PublicationSummary {
-      "id": "come-into-me-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/come-into-me-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Come Into Me (2018-) #2",
       ],
+      "path": "come-into-me-2018",
+      "publisher": "Black Mask",
+      "releaseDate": "02/5/2018",
       "title": "Come Into Me (2018-)",
       "url": "http://readcomicsonline.ru/comic/come-into-me-2018",
     },
     PublicationSummary {
-      "id": "coda-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/coda-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Coda (2018-) #1",
       ],
+      "path": "coda-2018",
+      "publisher": "Boom Studios",
+      "releaseDate": "02/5/2018",
       "title": "Coda (2018-)",
       "url": "http://readcomicsonline.ru/comic/coda-2018",
     },
     PublicationSummary {
-      "id": "batman-sins-of-the-father-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/batman-sins-of-the-father-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#7",
+      ],
+      "lastIssuesTitles": Array [
         "Batman: Sins of the Father (2018-) #7",
       ],
+      "path": "batman-sins-of-the-father-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Batman: Sins of the Father (2018-)",
       "url": "http://readcomicsonline.ru/comic/batman-sins-of-the-father-2018",
     },
     PublicationSummary {
-      "id": "astonishing-xmen-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/astonishing-xmen-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#11",
+      ],
+      "lastIssuesTitles": Array [
         "Astonishing X-Men (2017-) #11",
       ],
+      "path": "astonishing-xmen-2017",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Astonishing X-Men (2017-)",
       "url": "http://readcomicsonline.ru/comic/astonishing-xmen-2017",
     },
     PublicationSummary {
-      "id": "east-of-west-2013",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/east-of-west-2013/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#37",
+      ],
+      "lastIssuesTitles": Array [
         "East of West (2013-) #37",
       ],
+      "path": "east-of-west-2013",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
       "title": "East of West (2013-)",
       "url": "http://readcomicsonline.ru/comic/east-of-west-2013",
     },
     PublicationSummary {
-      "id": "death-or-glory-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/death-or-glory-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Death Or Glory (2018-) #1",
       ],
+      "path": "death-or-glory-2018",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
       "title": "Death Or Glory (2018-)",
       "url": "http://readcomicsonline.ru/comic/death-or-glory-2018",
     },
     PublicationSummary {
-      "id": "captain-america-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/captain-america-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#701",
+      ],
+      "lastIssuesTitles": Array [
         "Captain America (2017-) #701",
       ],
+      "path": "captain-america-2017",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Captain America (2017-)",
       "url": "http://readcomicsonline.ru/comic/captain-america-2017",
     },
     PublicationSummary {
-      "id": "breathless-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/breathless-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Breathless (2018-) #2",
       ],
+      "path": "breathless-2018",
+      "publisher": "Black Mask",
+      "releaseDate": "02/5/2018",
       "title": "Breathless (2018-)",
       "url": "http://readcomicsonline.ru/comic/breathless-2018",
     },
     PublicationSummary {
-      "id": "black-science-2013",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/black-science-2013/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#35",
+      ],
+      "lastIssuesTitles": Array [
         "Black Science (2013-) #35",
       ],
+      "path": "black-science-2013",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
       "title": "Black Science (2013-)",
       "url": "http://readcomicsonline.ru/comic/black-science-2013",
     },
     PublicationSummary {
-      "id": "avengers-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/avengers-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Avengers (2018-) #1",
       ],
+      "path": "avengers-2018",
+      "publisher": "Marvel Comics",
+      "releaseDate": "02/5/2018",
       "title": "Avengers (2018-)",
       "url": "http://readcomicsonline.ru/comic/avengers-2018",
     },
     PublicationSummary {
-      "id": "star-trek-the-next-generation-through-the-mirror-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/star-trek-the-next-generation-through-the-mirror-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Star Trek: The Next Generation: Through The Mirror (2018-) #1",
       ],
+      "path": "star-trek-the-next-generation-through-the-mirror-2018",
+      "publisher": "IDW",
+      "releaseDate": "02/5/2018",
       "title": "Star Trek: The Next Generation: Through The Mirror (2018-)",
       "url": "http://readcomicsonline.ru/comic/star-trek-the-next-generation-through-the-mirror-2018",
     },
     PublicationSummary {
-      "id": "dc-fcbd-silver-dc-super-hero-girls-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/dc-fcbd-silver-dc-super-hero-girls-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "DC FCBD Silver DC Super Hero Girls 2018 #1",
       ],
+      "path": "dc-fcbd-silver-dc-super-hero-girls-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "DC FCBD Silver DC Super Hero Girls 2018",
       "url": "http://readcomicsonline.ru/comic/dc-fcbd-silver-dc-super-hero-girls-2018",
     },
     PublicationSummary {
-      "id": "sex-criminals-2013",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/sex-criminals-2013/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#24",
+      ],
+      "lastIssuesTitles": Array [
         "Sex Criminals (2013-) #24",
       ],
+      "path": "sex-criminals-2013",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
       "title": "Sex Criminals (2013-)",
       "url": "http://readcomicsonline.ru/comic/sex-criminals-2013",
     },
     PublicationSummary {
-      "id": "dc-nation-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/dc-nation-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "DC Nation (2018-) #1",
       ],
+      "path": "dc-nation-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "DC Nation (2018-)",
       "url": "http://readcomicsonline.ru/comic/dc-nation-2018",
     },
     PublicationSummary {
-      "id": "star-trek-discovery-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/star-trek-discovery-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#Annual 2018",
+      ],
+      "lastIssuesTitles": Array [
         "Star Trek: Discovery (2017) #Annual 2018",
       ],
+      "path": "star-trek-discovery-2017",
+      "publisher": "IDW",
+      "releaseDate": "02/5/2018",
       "title": "Star Trek: Discovery (2017)",
       "url": "http://readcomicsonline.ru/comic/star-trek-discovery-2017",
     },
     PublicationSummary {
-      "id": "scales-scoundrels-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/scales-scoundrels-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#9",
+      ],
+      "lastIssuesTitles": Array [
         "Scales & Scoundrels (2017) #9",
       ],
-      "title": "Scales &amp; Scoundrels (2017)",
+      "path": "scales-scoundrels-2017",
+      "publisher": "Image Comics",
+      "releaseDate": "02/5/2018",
+      "title": "Scales & Scoundrels (2017)",
       "url": "http://readcomicsonline.ru/comic/scales-scoundrels-2017",
     },
     PublicationSummary {
-      "id": "green-lanterns-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/green-lanterns-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#46",
+      ],
+      "lastIssuesTitles": Array [
         "Green Lanterns  (2016-) #46",
       ],
+      "path": "green-lanterns-2016",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Green Lanterns  (2016-)",
       "url": "http://readcomicsonline.ru/comic/green-lanterns-2016",
     },
     PublicationSummary {
-      "id": "cyborg-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/cyborg-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#22",
+      ],
+      "lastIssuesTitles": Array [
         "Cyborg (2016-) #22",
       ],
+      "path": "cyborg-2016",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Cyborg (2016-)",
       "url": "http://readcomicsonline.ru/comic/cyborg-2016",
     },
     PublicationSummary {
-      "id": "batman-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/batman-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#46",
+      ],
+      "lastIssuesTitles": Array [
         "Batman (2016-) #46",
       ],
+      "path": "batman-2016",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Batman (2016-)",
       "url": "http://readcomicsonline.ru/comic/batman-2016",
     },
     PublicationSummary {
-      "id": "action-comics-special-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/action-comics-special-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Action Comics Special (2018) #1",
       ],
+      "path": "action-comics-special-2018",
+      "publisher": "DC Comics",
+      "releaseDate": "02/5/2018",
       "title": "Action Comics Special (2018)",
       "url": "http://readcomicsonline.ru/comic/action-comics-special-2018",
     },
     PublicationSummary {
-      "id": "2000-ad",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/2000-ad/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2079",
+      ],
+      "lastIssuesTitles": Array [
         "2000 AD #2079",
       ],
+      "path": "2000-ad",
+      "publisher": "Rebellion",
+      "releaseDate": "02/5/2018",
       "title": "2000 AD",
       "url": "http://readcomicsonline.ru/comic/2000-ad",
     },
     PublicationSummary {
-      "id": "injustice-2-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/injustice-2-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#56",
+      ],
+      "lastIssuesTitles": Array [
         "Injustice 2 (2017-) #56",
       ],
+      "path": "injustice-2-2017",
+      "publisher": "DC Comics",
+      "releaseDate": "01/5/2018",
       "title": "Injustice 2 (2017-)",
       "url": "http://readcomicsonline.ru/comic/injustice-2-2017",
     },
     PublicationSummary {
-      "id": "steven-universe-ongoing-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/steven-universe-ongoing-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#13",
+      ],
+      "lastIssuesTitles": Array [
         "Steven Universe Ongoing (2017) #13",
       ],
+      "path": "steven-universe-ongoing-2017",
+      "publisher": "Boom Studios",
+      "releaseDate": "27/4/2018",
       "title": "Steven Universe Ongoing (2017)",
       "url": "http://readcomicsonline.ru/comic/steven-universe-ongoing-2017",
     },
     PublicationSummary {
-      "id": "regular-show-2018-special",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/regular-show-2018-special/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Regular Show 2018 Special #1",
       ],
+      "path": "regular-show-2018-special",
+      "publisher": "One Shots & TPBs
+                                , 
+                                                                                                Boom Studios",
+      "releaseDate": "27/4/2018",
       "title": "Regular Show 2018 Special",
       "url": "http://readcomicsonline.ru/comic/regular-show-2018-special",
     },
     PublicationSummary {
-      "id": "bombshells-united-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/bombshells-united-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#36",
+      ],
+      "lastIssuesTitles": Array [
         "Bombshells: United (2017-) #36",
       ],
+      "path": "bombshells-united-2017",
+      "publisher": "DC Comics",
+      "releaseDate": "27/4/2018",
       "title": "Bombshells: United (2017-)",
       "url": "http://readcomicsonline.ru/comic/bombshells-united-2017",
     },
     PublicationSummary {
-      "id": "shrugged-vol-3-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/shrugged-vol-3-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+        "#2",
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Shrugged Vol. 3 (2018-) #3",
         "Shrugged Vol. 3 (2018-) #2",
         "Shrugged Vol. 3 (2018-) #1",
       ],
+      "path": "shrugged-vol-3-2018",
+      "publisher": "Aspen",
+      "releaseDate": "26/4/2018",
       "title": "Shrugged Vol. 3 (2018-)",
       "url": "http://readcomicsonline.ru/comic/shrugged-vol-3-2018",
     },
     PublicationSummary {
-      "id": "image-firsts-age-of-bronze-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/image-firsts-age-of-bronze-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Image Firsts - Age of Bronze (2018) #1",
       ],
+      "path": "image-firsts-age-of-bronze-2018",
+      "publisher": "Image Comics",
+      "releaseDate": "26/4/2018",
       "title": "Image Firsts - Age of Bronze (2018)",
       "url": "http://readcomicsonline.ru/comic/image-firsts-age-of-bronze-2018",
     },
     PublicationSummary {
-      "id": "weird-love-2014",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/weird-love-2014/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#23",
+      ],
+      "lastIssuesTitles": Array [
         "WEIRD Love (2014-) #23",
       ],
+      "path": "weird-love-2014",
+      "publisher": "IDW",
+      "releaseDate": "26/4/2018",
       "title": "WEIRD Love (2014-)",
       "url": "http://readcomicsonline.ru/comic/weird-love-2014",
     },
     PublicationSummary {
-      "id": "scoobydoo-teamup-2013",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/scoobydoo-teamup-2013/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#74",
+      ],
+      "lastIssuesTitles": Array [
         "Scooby-Doo! Team-Up (2013) #74",
       ],
+      "path": "scoobydoo-teamup-2013",
+      "publisher": "DC Comics",
+      "releaseDate": "26/4/2018",
       "title": "Scooby-Doo! Team-Up (2013)",
       "url": "http://readcomicsonline.ru/comic/scoobydoo-teamup-2013",
     },
     PublicationSummary {
-      "id": "gold-digger-1999",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/gold-digger-1999/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#251",
+      ],
+      "lastIssuesTitles": Array [
         "Gold Digger (1999-) #251",
       ],
+      "path": "gold-digger-1999",
+      "publisher": "Antartic Press",
+      "releaseDate": "26/4/2018",
       "title": "Gold Digger (1999-)",
       "url": "http://readcomicsonline.ru/comic/gold-digger-1999",
     },
     PublicationSummary {
-      "id": "throwaways-2016",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/throwaways-2016/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#12",
+      ],
+      "lastIssuesTitles": Array [
         "Throwaways (2016-) #12",
       ],
+      "path": "throwaways-2016",
+      "publisher": "Image Comics",
+      "releaseDate": "25/4/2018",
       "title": "Throwaways (2016-)",
       "url": "http://readcomicsonline.ru/comic/throwaways-2016",
     },
     PublicationSummary {
-      "id": "rick-and-morty-2015",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/rick-and-morty-2015/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#37",
+      ],
+      "lastIssuesTitles": Array [
         "Rick and Morty (2015-) #37",
       ],
+      "path": "rick-and-morty-2015",
+      "publisher": "Oni Press",
+      "releaseDate": "25/4/2018",
       "title": "Rick and Morty (2015-)",
       "url": "http://readcomicsonline.ru/comic/rick-and-morty-2015",
     },
     PublicationSummary {
-      "id": "grass-kings-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/grass-kings-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#14",
+      ],
+      "lastIssuesTitles": Array [
         "Grass Kings (2017) #14",
       ],
+      "path": "grass-kings-2017",
+      "publisher": "Boom Studios",
+      "releaseDate": "25/4/2018",
       "title": "Grass Kings (2017)",
       "url": "http://readcomicsonline.ru/comic/grass-kings-2017",
     },
     PublicationSummary {
-      "id": "ghoul-scouts-i-was-a-tweenage-werewolf-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/ghoul-scouts-i-was-a-tweenage-werewolf-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Ghoul Scouts: I Was a Tweenage Werewolf (2018) #2",
       ],
+      "path": "ghoul-scouts-i-was-a-tweenage-werewolf-2018",
+      "publisher": "Action Lab",
+      "releaseDate": "25/4/2018",
       "title": "Ghoul Scouts: I Was a Tweenage Werewolf (2018)",
       "url": "http://readcomicsonline.ru/comic/ghoul-scouts-i-was-a-tweenage-werewolf-2018",
     },
     PublicationSummary {
-      "id": "days-of-hate-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/days-of-hate-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "Days Of Hate (2018) #3",
       ],
+      "path": "days-of-hate-2018",
+      "publisher": "Image Comics",
+      "releaseDate": "25/4/2018",
       "title": "Days Of Hate (2018)",
       "url": "http://readcomicsonline.ru/comic/days-of-hate-2018",
     },
     PublicationSummary {
-      "id": "arya-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/arya-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#4",
+      ],
+      "lastIssuesTitles": Array [
         "Arya (2017) #4",
       ],
+      "path": "arya-2017",
+      "publisher": "Antartic Press",
+      "releaseDate": "25/4/2018",
       "title": "Arya (2017)",
       "url": "http://readcomicsonline.ru/comic/arya-2017",
     },
     PublicationSummary {
-      "id": "xo-manowar-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/xo-manowar-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#14",
+      ],
+      "lastIssuesTitles": Array [
         "X-O Manowar (2017) #14",
       ],
+      "path": "xo-manowar-2017",
+      "publisher": "Valiant",
+      "releaseDate": "25/4/2018",
       "title": "X-O Manowar (2017)",
       "url": "http://readcomicsonline.ru/comic/xo-manowar-2017",
     },
     PublicationSummary {
-      "id": "the-beef-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/the-beef-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "The Beef (2018) #3",
       ],
+      "path": "the-beef-2018",
+      "publisher": "Image Comics",
+      "releaseDate": "25/4/2018",
       "title": "The Beef (2018)",
       "url": "http://readcomicsonline.ru/comic/the-beef-2018",
     },
     PublicationSummary {
-      "id": "sheena-queen-of-the-jungle-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/sheena-queen-of-the-jungle-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#8",
+      ],
+      "lastIssuesTitles": Array [
         "Sheena: Queen Of The Jungle (2017) #8",
       ],
+      "path": "sheena-queen-of-the-jungle-2017",
+      "publisher": "Dynamite",
+      "releaseDate": "25/4/2018",
       "title": "Sheena: Queen Of The Jungle (2017)",
       "url": "http://readcomicsonline.ru/comic/sheena-queen-of-the-jungle-2017",
     },
     PublicationSummary {
-      "id": "shadowman-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/shadowman-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Shadowman (2018) #2",
       ],
+      "path": "shadowman-2018",
+      "publisher": "Valiant",
+      "releaseDate": "25/4/2018",
       "title": "Shadowman (2018)",
       "url": "http://readcomicsonline.ru/comic/shadowman-2018",
     },
     PublicationSummary {
-      "id": "robyn-hood-the-curse-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/robyn-hood-the-curse-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#4",
+      ],
+      "lastIssuesTitles": Array [
         "Robyn Hood: The Curse (2018) #4",
       ],
+      "path": "robyn-hood-the-curse-2018",
+      "publisher": "Zenescope",
+      "releaseDate": "25/4/2018",
       "title": "Robyn Hood: The Curse (2018)",
       "url": "http://readcomicsonline.ru/comic/robyn-hood-the-curse-2018",
     },
     PublicationSummary {
-      "id": "pathfinder-spiral-of-bones-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/pathfinder-spiral-of-bones-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#2",
+      ],
+      "lastIssuesTitles": Array [
         "Pathfinder: Spiral Of Bones (2018) #2",
       ],
+      "path": "pathfinder-spiral-of-bones-2018",
+      "publisher": "Dynamite",
+      "releaseDate": "25/4/2018",
       "title": "Pathfinder: Spiral Of Bones (2018)",
       "url": "http://readcomicsonline.ru/comic/pathfinder-spiral-of-bones-2018",
     },
     PublicationSummary {
-      "id": "lumberjanes-2014",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/lumberjanes-2014/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#49",
+      ],
+      "lastIssuesTitles": Array [
         "Lumberjanes (2014-) #49",
       ],
+      "path": "lumberjanes-2014",
+      "publisher": "Boom Studios",
+      "releaseDate": "25/4/2018",
       "title": "Lumberjanes (2014-)",
       "url": "http://readcomicsonline.ru/comic/lumberjanes-2014",
     },
     PublicationSummary {
-      "id": "lucas-stand-inner-demons-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/lucas-stand-inner-demons-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "Lucas Stand: Inner Demons (2018) #3",
       ],
+      "path": "lucas-stand-inner-demons-2018",
+      "publisher": "Boom Studios",
+      "releaseDate": "25/4/2018",
       "title": "Lucas Stand: Inner Demons (2018)",
       "url": "http://readcomicsonline.ru/comic/lucas-stand-inner-demons-2018",
     },
     PublicationSummary {
-      "id": "kissarmy-of-darkness-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/kissarmy-of-darkness-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#3",
+      ],
+      "lastIssuesTitles": Array [
         "Kiss/Army Of Darkness (2018) #3",
       ],
+      "path": "kissarmy-of-darkness-2018",
+      "publisher": "Dynamite",
+      "releaseDate": "25/4/2018",
       "title": "Kiss/Army Of Darkness (2018)",
       "url": "http://readcomicsonline.ru/comic/kissarmy-of-darkness-2018",
     },
     PublicationSummary {
-      "id": "kino-2017",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/kino-2017/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#5",
+      ],
+      "lastIssuesTitles": Array [
         "KINO (2017) #5",
       ],
+      "path": "kino-2017",
+      "publisher": "Lion Forge",
+      "releaseDate": "25/4/2018",
       "title": "KINO (2017)",
       "url": "http://readcomicsonline.ru/comic/kino-2017",
     },
     PublicationSummary {
-      "id": "jeepers-creepers-2018",
+      "id": "uuid",
       "image": "http://readcomicsonline.ru/uploads/manga/jeepers-creepers-2018/cover/cover_250x350.jpg",
-      "lastIssuesTitle": Array [
+      "lastIssuesNumbers": Array [
+        "#1",
+      ],
+      "lastIssuesTitles": Array [
         "Jeepers Creepers (2018-) #1",
       ],
+      "path": "jeepers-creepers-2018",
+      "publisher": "Dynamite",
+      "releaseDate": "25/4/2018",
       "title": "Jeepers Creepers (2018-)",
       "url": "http://readcomicsonline.ru/comic/jeepers-creepers-2018",
     },

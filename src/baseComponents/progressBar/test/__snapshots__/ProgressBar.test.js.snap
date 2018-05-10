@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar renders an empty progress bar if it is hidden 1`] = `""`;
+
+exports[`ProgressBar renders the progress bar composed as by default if it is not hidden 1`] = `
+<div>
+  <div>
+    <CircularProgress
+      mode="indeterminate"
+      size={100}
+      style={
+        Object {
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+        }
+      }
+      value={55}
+    />
+    <div
+      style={
+        Object {
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -48%)",
+          "width": 92,
+        }
+      }
+    >
+      <ComicTimeLogo />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProgressBar renders the progress bar composed of a circular progress bar plus the app logo by default 1`] = `
+<div>
+  <div>
+    <CircularProgress
+      mode="indeterminate"
+      size={100}
+      style={
+        Object {
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+        }
+      }
+      value={55}
+    />
+    <div
+      style={
+        Object {
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -48%)",
+          "width": 92,
+        }
+      }
+    >
+      <ComicTimeLogo />
+    </div>
+  </div>
+</div>
+`;
