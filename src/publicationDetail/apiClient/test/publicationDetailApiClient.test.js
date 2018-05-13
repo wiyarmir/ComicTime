@@ -19,7 +19,7 @@ describe("Publication detail API Client", () => {
   });
 
   it("returns a network error if there is any not handled exception", async () => {
-    givenThereIsNoConnection(anyPublicationId);
+    givenThereIsNoConnection();
     const result = await getPublication(anyPublicationId);
     expect(result.left()).toEqual(new NetworkError());
   });

@@ -1,16 +1,14 @@
 export class IssuePage {
-  constructor(number, url) {
+  constructor(number, image) {
     this.number = number;
-    this.url = url;
+    this.image = image;
   }
 }
 export class Issue {
-  constructor(id, title, numberOfPages, previousIssueId, nextIssueId, pages) {
+  constructor(id, title, numberOfPages, pages) {
     this.id = id;
     this.title = title;
     this.numberOfPages = numberOfPages;
-    this.previousIssueId = previousIssueId;
-    this.nextIssueId = nextIssueId;
     this.pages = pages;
   }
 }
