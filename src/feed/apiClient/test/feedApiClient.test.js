@@ -2,7 +2,7 @@ import "../../../testUtils/dummyNodeUuid";
 import nock from "nock";
 import { getFeedPage } from "../feedApiClient";
 import { baseUrl, composeResourceUrl } from "../../../apiClient/apiClient";
-import { NetworkError, UnknownError } from "../../../apiClient/model";
+import { NetworkError, NotFound, UnknownError } from "../../../apiClient/model";
 import {
   emptyFeedApiPageResponse,
   feedApiPageResponse
@@ -12,10 +12,18 @@ import { Page, PublicationSummary } from "../../model";
 describe("Feed API Client", () => {
   it("returns an unknown error if the response status code is an error", async () => {
     const page = 1;
-    const errorResponseCode = 404;
+    const errorResponseCode = 500;
     givenTheFeedApiIsNotWorking(page, errorResponseCode);
     const result = await getFeedPage(page);
     expect(result.left()).toEqual(new UnknownError(errorResponseCode));
+  });
+
+  it("returns an not found error if the response status code is 404", async () => {
+    const page = 1;
+    const errorResponseCode = 404;
+    givenTheFeedApiIsNotWorking(page, errorResponseCode);
+    const result = await getFeedPage(page);
+    expect(result.left()).toEqual(new NotFound());
   });
 
   it("returns a network error if there is any not handled exception", async () => {

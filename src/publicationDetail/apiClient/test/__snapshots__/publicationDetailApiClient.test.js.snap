@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Publication detail API Client returns the publication with the issues summary inside 1`] = `
+Object {
+  "isRightValue": true,
+  "value": Publication {
+    "authors": Object {
+      "isValue": true,
+      "val": "Joshua Williamson",
+    },
+    "id": "the-flash-2016",
+    "image": "http://readcomicsonline.ru/uploads/manga/the-flash-2016/cover/cover_250x350.jpg",
+    "issues": Array [
+      IssueSummary {
+        "id": "Annual1",
+        "releaseDate": "31 Jan. 2018",
+        "title": "The Flash (2016-) #Annual 1",
+      },
+      IssueSummary {
+        "id": "46",
+        "releaseDate": "09 May. 2018",
+        "title": "The Flash (2016-) #46",
+      },
+      IssueSummary {
+        "id": "45",
+        "releaseDate": "25 Apr. 2018",
+        "title": "The Flash (2016-) #45",
+      },
+      IssueSummary {
+        "id": "44",
+        "releaseDate": "11 Apr. 2018",
+        "title": "The Flash (2016-) #44",
+      },
+      IssueSummary {
+        "id": "43",
+        "releaseDate": "28 Mar. 2018",
+        "title": "The Flash (2016-) #43",
+      },
+      IssueSummary {
+        "id": "42",
+        "releaseDate": "14 Mar. 2018",
+        "title": "The Flash (2016-) #42",
+      },
+      IssueSummary {
+        "id": "41",
+        "releaseDate": "28 Feb. 2018",
+        "title": "The Flash (2016-) #41",
+      },
+      IssueSummary {
+        "id": "40",
+        "releaseDate": "14 Feb. 2018",
+        "title": "The Flash (2016-) #40",
+      },
+      IssueSummary {
+        "id": "39",
+        "releaseDate": "24 Jan. 2018",
+        "title": "The Flash (2016-) #39",
+      },
+      IssueSummary {
+        "id": "38",
+        "releaseDate": "10 Jan. 2018",
+        "title": "The Flash (2016-) #38",
+      },
+      IssueSummary {
+        "id": "37",
+        "releaseDate": "27 Dec. 2017",
+        "title": "The Flash (2016-) #37",
+      },
+      IssueSummary {
+        "id": "36",
+        "releaseDate": "13 Dec. 2017",
+        "title": "The Flash (2016-) #36",
+      },
+      IssueSummary {
+        "id": "35",
+        "releaseDate": "22 Nov. 2017",
+        "title": "The Flash (2016-) #35",
+      },
+      IssueSummary {
+        "id": "34",
+        "releaseDate": "08 Nov. 2017",
+        "title": "The Flash (2016-) #34",
+      },
+      IssueSummary {
+        "id": "33",
+        "releaseDate": "25 Oct. 2017",
+        "title": "The Flash (2016-) #33",
+      },
+      IssueSummary {
+        "id": "32",
+        "releaseDate": "11 Oct. 2017",
+        "title": "The Flash (2016-) #32",
+      },
+      IssueSummary {
+        "id": "31",
+        "releaseDate": "27 Sep. 2017",
+        "title": "The Flash (2016-) #31",
+      },
+      IssueSummary {
+        "id": "30",
+        "releaseDate": "13 Sep. 2017",
+        "title": "The Flash (2016-) #30",
+      },
+      IssueSummary {
+        "id": "29",
+        "releaseDate": "23 Aug. 2017",
+        "title": "The Flash (2016-) #29",
+      },
+      IssueSummary {
+        "id": "28",
+        "releaseDate": "09 Aug. 2017",
+        "title": "The Flash (2016-) #28",
+      },
+      IssueSummary {
+        "id": "27",
+        "releaseDate": "26 Jul. 2017",
+        "title": "The Flash (2016-) #27",
+      },
+      IssueSummary {
+        "id": "26",
+        "releaseDate": "12 Jul. 2017",
+        "title": "The Flash (2016-) #26",
+      },
+      IssueSummary {
+        "id": "25",
+        "releaseDate": "28 Jun. 2017",
+        "title": "The Flash (2016-) #25",
+      },
+      IssueSummary {
+        "id": "24",
+        "releaseDate": "14 Jun. 2017",
+        "title": "The Flash (2016-) #24",
+      },
+      IssueSummary {
+        "id": "23",
+        "releaseDate": "31 May. 2017",
+        "title": "The Flash (2016-) #23",
+      },
+      IssueSummary {
+        "id": "22",
+        "releaseDate": "18 May. 2017",
+        "title": "The Flash (2016-) #22",
+      },
+      IssueSummary {
+        "id": "21",
+        "releaseDate": "26 Apr. 2017",
+        "title": "The Flash (2016-) #21",
+      },
+      IssueSummary {
+        "id": "20",
+        "releaseDate": "12 Apr. 2017",
+        "title": "The Flash (2016-) #20",
+      },
+      IssueSummary {
+        "id": "19",
+        "releaseDate": "22 Mar. 2017",
+        "title": "The Flash (2016-) #19",
+      },
+      IssueSummary {
+        "id": "18",
+        "releaseDate": "08 Mar. 2017",
+        "title": "The Flash (2016-) #18",
+      },
+      IssueSummary {
+        "id": "17",
+        "releaseDate": "22 Feb. 2017",
+        "title": "The Flash (2016-) #17",
+      },
+      IssueSummary {
+        "id": "16",
+        "releaseDate": "08 Feb. 2017",
+        "title": "The Flash (2016-) #16",
+      },
+      IssueSummary {
+        "id": "15",
+        "releaseDate": "25 Jan. 2017",
+        "title": "The Flash (2016-) #15",
+      },
+      IssueSummary {
+        "id": "14",
+        "releaseDate": "11 Jan. 2017",
+        "title": "The Flash (2016-) #14",
+      },
+      IssueSummary {
+        "id": "13",
+        "releaseDate": "14 Dec. 2016",
+        "title": "The Flash (2016-) #13",
+      },
+      IssueSummary {
+        "id": "12",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #12",
+      },
+      IssueSummary {
+        "id": "11",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #11",
+      },
+      IssueSummary {
+        "id": "10",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #10",
+      },
+      IssueSummary {
+        "id": "9",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #9",
+      },
+      IssueSummary {
+        "id": "8",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #8",
+      },
+      IssueSummary {
+        "id": "7",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #7",
+      },
+      IssueSummary {
+        "id": "6",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #6",
+      },
+      IssueSummary {
+        "id": "5",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #5",
+      },
+      IssueSummary {
+        "id": "4",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #4",
+      },
+      IssueSummary {
+        "id": "3",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #3",
+      },
+      IssueSummary {
+        "id": "2",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #2",
+      },
+      IssueSummary {
+        "id": "1",
+        "releaseDate": "09 Dec. 2016",
+        "title": "The Flash (2016-) #1",
+      },
+    ],
+    "publisher": Object {
+      "isValue": true,
+      "val": "DC Comics",
+    },
+    "releaseDate": Object {
+      "isValue": true,
+      "val": "2016",
+    },
+    "status": Object {
+      "isValue": true,
+      "val": "Ongoing",
+    },
+    "summary": "&quot;LIGHTNING STRIKES TWICE&quot; Chapter One
+
+A new storm brews over Central City and disproves the old adage about lightning never, well...you know. Just as Barry begins to feel overwhelmed fighting crime, a new speedster debuts&#x2014;but just where did this amazing new friend come from?
+
+FLASH FACT: &quot;2016 is the 60th anniversary of Barry Allen becoming The Flash, and it&apos;s a privilege to be a part of it,&quot; says writer Joshua Williamson. &quot;&apos;The Return of Barry Allen&apos; in FLASH #79 [1993] is one of my favorite comics of all time. It&apos;s where I became a Flash fan for life.&quot;",
+    "title": "The Flash (2016-)",
+  },
+}
+`;

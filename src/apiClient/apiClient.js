@@ -2,7 +2,7 @@ import rest from "rest";
 import mime from "rest/interceptor/mime";
 import log from "loglevel";
 import { Left, Right } from "monet";
-import { NetworkError, UnknownError } from "./model";
+import { NetworkError, NotFound, UnknownError } from "./model";
 
 const restClient = rest.wrap(mime);
 
@@ -32,6 +32,8 @@ function processResponse(response, resolve) {
   if (statusCode === 200) {
     const pageHtml = response.entity.contents;
     resolve(Right(pageHtml));
+  } else if (statusCode === 404) {
+    resolve(Left(new NotFound()));
   } else {
     const unknownError = new UnknownError(statusCode);
     log.error(unknownError);

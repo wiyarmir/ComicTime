@@ -4,3 +4,4 @@ export class UnknownError {
     this.statusCode = statusCode;
   }
 }
+export class NotFound {}
