@@ -1,13 +1,32 @@
+jest.mock("../../../utils/imageUtils", () => {
+  return {
+    downloadImageUrlAsBase64: jest.fn()
+  };
+});
+jest.mock("../../../utils/jszipUtils", () => {
+  return {
+    downloadFile: jest.fn()
+  };
+});
 import nock from "nock";
 import { baseUrl, composeResourceUrl } from "../../../apiClient/apiClient";
 import { NetworkError, UnknownError, NotFound } from "../../../apiClient/model";
-import { getIssue } from "../issueDetailApiClient";
+import { downloadIssue, getIssue } from "../issueDetailApiClient";
 import { issueResponse } from "./resources/issueDetailApiClientResponses";
+import { downloadImageUrlAsBase64 } from "../../../utils/imageUtils";
+import { downloadFile } from "../../../utils/jszipUtils";
+import { Right, Left } from "monet";
+import { anyBase64Image } from "./resources/base64images";
 
 const anyPublicationId = "the-flash-2016";
 const anyIssueId = "Annual1";
 
 describe("Issue detail API Client", () => {
+  beforeEach(() => {
+    downloadImageUrlAsBase64.mockReset();
+    downloadFile.mockReset();
+  });
+
   it("returns a not found error if the issue does not exist", async () => {
     const errorResponseCode = 404;
     givenTheIssueDoesNotExist(anyPublicationId, errorResponseCode);
@@ -39,7 +58,7 @@ describe("Issue detail API Client", () => {
 
     const issue = result.right();
     expect(issue.id).toEqual(anyIssueId);
-    expect(issue.title).toEqual("The Flash (2016-)");
+    expect(issue.title).toEqual("The Flash (2016-) #Annual 1");
     expect(issue.numberOfPages).toEqual(20);
     const firstPage = issue.pages[0];
     expect(firstPage.number).toEqual(1);
@@ -54,7 +73,40 @@ describe("Issue detail API Client", () => {
     const result = await getIssue(anyPublicationId, anyIssueId);
     expect(result.right()).toMatchSnapshot();
   });
+
+  it("generates a zip file using the pages of an issue already loaded", async () => {
+    givenTheApiReturnsTheIssueInformation(anyPublicationId, anyIssueId);
+    const getIssueResult = await getIssue(anyPublicationId, anyIssueId);
+    const issue = getIssueResult.right();
+    const fileName = `${issue.title}.cbr`;
+    givenThatIssuePagesAreDownloadedProperly(fileName);
+
+    const file = await downloadIssue(issue);
+
+    expect(file.isRight()).toBeTruthy();
+  });
+
+  it("returns an error if any of the images being downloaded fail", async () => {
+    givenTheApiReturnsTheIssueInformation(anyPublicationId, anyIssueId);
+    const getIssueResult = await getIssue(anyPublicationId, anyIssueId);
+    const issue = getIssueResult.right();
+    givenTheIssuePagesAreNotDownloadedProperly();
+
+    const file = await downloadIssue(issue);
+
+    expect(file.isRight()).toBeFalsy();
+  });
 });
+
+function givenTheIssuePagesAreNotDownloadedProperly() {
+  downloadFile.mockReturnValue(Promise.resolve(Left()));
+}
+
+function givenThatIssuePagesAreDownloadedProperly(fileName) {
+  const result = Promise.resolve(Right(anyBase64Image));
+  downloadImageUrlAsBase64.mockReturnValue(result);
+  downloadFile.mockReturnValue(Promise.resolve(Right(fileName)));
+}
 
 function givenTheIssueDoesNotExist(publicationId, issueId) {
   nock(baseUrl)
