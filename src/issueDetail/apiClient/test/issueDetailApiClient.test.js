@@ -16,7 +16,7 @@ jest.mock("../../../utils/jszipUtils", () => {
 import nock from "nock";
 import { baseUrl, composeResourceUrl } from "../../../apiClient/apiClient";
 import { NetworkError, UnknownError, NotFound } from "../../../apiClient/model";
-import { downloadIssueAsCbrFile, getIssue } from "../issueDetailApiClient";
+import { downloadIssueAsCbzFile, getIssue } from "../issueDetailApiClient";
 import { issueResponse } from "./resources/issueDetailApiClientResponses";
 import { downloadImageUrlAsBase64 } from "../../../utils/imageUtils";
 import { downloadFile } from "../../../utils/jszipUtils";
@@ -80,10 +80,10 @@ describe("Issue detail API Client", () => {
     givenTheApiReturnsTheIssueInformation(anyPublicationId, anyIssueId);
     const getIssueResult = await getIssue(anyPublicationId, anyIssueId);
     const issue = getIssueResult.right();
-    const fileName = `${issue.title}.cbr`;
+    const fileName = `${issue.title}.cbz`;
     givenThatIssuePagesAreDownloadedProperly(fileName);
 
-    const file = await downloadIssueAsCbrFile(issue);
+    const file = await downloadIssueAsCbzFile(issue);
 
     expect(file.isRight()).toBeTruthy();
   });
@@ -94,7 +94,7 @@ describe("Issue detail API Client", () => {
     const issue = getIssueResult.right();
     givenTheIssuePagesAreNotDownloadedProperly();
 
-    const file = await downloadIssueAsCbrFile(issue);
+    const file = await downloadIssueAsCbzFile(issue);
 
     expect(file.isRight()).toBeFalsy();
   });

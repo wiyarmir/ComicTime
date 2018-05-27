@@ -10,7 +10,7 @@ export async function downloadImageUrlAsBase64(url) {
       canvas.width = img.width;
       let context = canvas.getContext("2d");
       context.drawImage(img, 0, 0);
-      let dataURL = canvas.toDataURL("image/png");
+      let dataURL = canvas.toDataURL("image/jpeg", 0.8);
       canvas = null;
       resolve(dataURL);
     };

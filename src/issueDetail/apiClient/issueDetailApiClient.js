@@ -16,8 +16,8 @@ export async function getIssue(publicationId, issueId) {
   });
 }
 
-export async function downloadIssueAsCbrFile(issue) {
-  const fileName = `${issue.title}.cbr`;
+export async function downloadIssueAsCbzFile(issue) {
+  const fileName = `${issue.title}.cbz`;
   return generateZipFileFromIssueImages(issue)
     .then(eitherJszipFile => {
       return eitherJszipFile.map(jszipFile => {
@@ -66,7 +66,7 @@ async function generateZipFileFromIssueImages(issue) {
     return downloadImageUrlAsBase64(page.image);
   });
   const imageNames = issue.pages.map(
-    page => `${formatNumberWithTwoDigits(page.number)}.jpg`
+    page => `${issue.title} - ${formatNumberWithTwoDigits(page.number)}.jpeg`
   );
   return Promise.all(futureImages)
     .then(base64Images => {
@@ -74,7 +74,13 @@ async function generateZipFileFromIssueImages(issue) {
         const zipFile = new JSZip();
         imageNames.forEach((name, index) => {
           const image = base64Images[index].split("base64,");
-          zipFile.file(name, image[1], { base64: true });
+          zipFile.file(name, image[1], {
+            base64: true,
+            compression: "DEFLATE",
+            compressionOptions: {
+              level: 9
+            }
+          });
         });
         resolve(Right(zipFile));
       });

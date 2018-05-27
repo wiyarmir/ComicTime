@@ -1,7 +1,7 @@
 import { getPublication } from "./apiClient/publicationDetailApiClient";
 import { None, Some } from "monet";
 import {
-  downloadIssueAsCbrFile,
+  downloadIssueAsCbzFile,
   getIssue
 } from "../issueDetail/apiClient/issueDetailApiClient";
 
@@ -33,7 +33,7 @@ export function downloadIssue(issue) {
     getIssue(issue.publicationId, issue.id).then(eitherIssueDetail => {
       if (eitherIssueDetail.isRight()) {
         const issueDetail = eitherIssueDetail.right();
-        downloadIssueAsCbrFile(issueDetail).then(result => {
+        downloadIssueAsCbzFile(issueDetail).then(result => {
           if (result.isRight()) {
             dispatch(issueDownloadedProperly(issue));
           } else {

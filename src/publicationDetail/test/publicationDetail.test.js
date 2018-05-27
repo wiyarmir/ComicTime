@@ -7,7 +7,7 @@ jest.mock("../apiClient/publicationDetailApiClient", () => {
 jest.mock("../../issueDetail/apiClient/issueDetailApiClient", () => {
   return {
     getIssue: jest.fn(),
-    downloadIssueAsCbrFile: jest.fn()
+    downloadIssueAsCbzFile: jest.fn()
   };
 });
 
@@ -25,7 +25,7 @@ import { flushPromises } from "../../testUtils/promises";
 import { NetworkError } from "../../apiClient/model";
 import {
   getIssue,
-  downloadIssueAsCbrFile
+  downloadIssueAsCbzFile
 } from "../../issueDetail/apiClient/issueDetailApiClient";
 
 describe("Publication detail reducer", () => {
@@ -116,7 +116,7 @@ describe("Publication detail reducer", () => {
   it("saves the error found while downloading the issue if something went wrong downloading the issue images", async () => {
     const store = givenTheComicTimeStore();
     givenTheGetIssueReturns(Right(anyIssue));
-    givenTheDownloadCbrFileReturns(Left(new NetworkError()));
+    givenTheDownloadCbzFileReturns(Left(new NetworkError()));
 
     await downloadIssueSummary(store, anyIssueSummary);
 
@@ -133,7 +133,7 @@ describe("Publication detail reducer", () => {
   it("saves the issue downloaded as last issue being downloaded if it is downloaded properly", async () => {
     const store = givenTheComicTimeStore();
     givenTheGetIssueReturns(Right(anyIssue));
-    givenTheDownloadCbrFileReturns(Right());
+    givenTheDownloadCbzFileReturns(Right());
 
     await downloadIssueSummary(store, anyIssueSummary);
 
@@ -170,6 +170,6 @@ function givenTheGetIssueReturns(result) {
   getIssue.mockReturnValue(Promise.resolve(result));
 }
 
-function givenTheDownloadCbrFileReturns(result) {
-  downloadIssueAsCbrFile.mockReturnValue(Promise.resolve(result));
+function givenTheDownloadCbzFileReturns(result) {
+  downloadIssueAsCbzFile.mockReturnValue(Promise.resolve(result));
 }
