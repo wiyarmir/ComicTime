@@ -37,10 +37,10 @@ yarn test --testRegex "String calculator spec*" //Executes tests matching with t
 
 If you are going to execute the repository test suite from IntelliJ remember to add the following jest params to your configuration:
 
-``
---env=jsdom # If you need to run tests using react under the hood.
---env=jsdom --updateSnapshot # If you need to record the tests snapshots again.
-``
+```
+--env=jsdom // If you need to run tests using react under the hood.
+--env=jsdom --updateSnapshot // If you need to record the tests snapshots again.
+```
 
 ## Error reporting:
 
