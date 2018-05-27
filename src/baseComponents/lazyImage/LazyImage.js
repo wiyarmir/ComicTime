@@ -10,13 +10,14 @@ const style = {
 class LazyImage extends React.Component {
   render() {
     const height = this.props.height;
+    const customStyle = this.props.style || style;
     return (
       <LazyLoad height={height} offsetTop={height} throttle={100}>
         <ProgressiveImage
           src={this.props.src}
           placeholder={this.props.placeholder}
           alt={this.props.alt}
-          style={style}
+          style={customStyle}
         />
       </LazyLoad>
     );

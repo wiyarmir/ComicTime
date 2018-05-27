@@ -19,6 +19,7 @@ exports[`PublicationsFeed renders the publication feed based on the list of publ
     cols={1}
     containerElement="div"
     key="0"
+    onClick={[Function]}
     rows={1}
     subtitle={
       <span>
@@ -45,6 +46,7 @@ exports[`PublicationsFeed renders the publication feed based on the list of publ
     cols={1}
     containerElement="div"
     key="1"
+    onClick={[Function]}
     rows={1}
     subtitle={
       <span>

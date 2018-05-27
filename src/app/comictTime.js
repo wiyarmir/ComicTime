@@ -1,6 +1,7 @@
 import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import { feedReducer } from "../feed/feed";
+import { publicationDetailReducer } from "../publicationDetail/publicationDetail";
 
 export const comicTimeStore = initializeStore(comicTimeReducer);
 
@@ -15,6 +16,7 @@ export function initializeStore(reducer) {
 
 export function comicTimeReducer(state = {}, action) {
   return {
-    feed: feedReducer(state.feed, action)
+    feed: feedReducer(state.feed, action),
+    publicationDetail: publicationDetailReducer(state.publicationDetail, action)
   };
 }

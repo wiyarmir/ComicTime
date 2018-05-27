@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PublicationNotFound shows the applicaiton logo and a message to indicate the publication couldn't be loaded 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "height": "200px",
+        "left": "50%",
+        "position": "absolute",
+        "top": "50%",
+        "transform": "translate(-50%, -50%)",
+      }
+    }
+  >
+    <ComicTimeLogo />
+    <p>
+      publicationNotFoundMessage
+       
+      <span
+        aria-label="Sad"
+        role="img"
+      >
+        😢
+      </span>
+    </p>
+  </div>
+</div>
+`;

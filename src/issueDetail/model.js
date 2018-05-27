@@ -5,8 +5,9 @@ export class IssuePage {
   }
 }
 export class Issue {
-  constructor(id, title, numberOfPages, pages) {
+  constructor(id, publicationId, title, numberOfPages, pages) {
     this.id = id;
+    this.publicationId = publicationId;
     this.title = title;
     this.numberOfPages = numberOfPages;
     this.pages = pages;

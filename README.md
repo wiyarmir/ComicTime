@@ -35,6 +35,13 @@ yarn test --watchAll // Watch files for changes and rerun every test.
 yarn test --testRegex "String calculator spec*" //Executes tests matching with the regex passed as param.
 ```
 
+If you are going to execute the repository test suite from IntelliJ remember to add the following jest params to your configuration:
+
+``
+--env=jsdom # If you need to run tests using react under the hood.
+--env=jsdom --updateSnapshot # If you need to record the tests snapshots again.
+``
+
 ## Error reporting:
 
 Reporting errors or crashes as issues is always useful and worth it :bug: However, if we can find some errors and report it automatically our lives as developers will be easier. That's why this repository is configured to use [Sentry](https://sentry.io/) to report all the not handled exceptions for us. In order to configure Sentry to report errors for you only need to create two files named ``.env.development`` and ```.env.production`` in the root folder and add the following content:

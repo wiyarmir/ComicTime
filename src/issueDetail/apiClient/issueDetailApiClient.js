@@ -6,6 +6,7 @@ import { downloadImageUrlAsBase64 } from "../../utils/imageUtils";
 import { formatNumberWithTwoDigits } from "../../utils/numberUtils";
 import { downloadFile } from "../../utils/jszipUtils";
 import { Right, Left } from "monet";
+import log from "loglevel";
 
 export async function getIssue(publicationId, issueId) {
   return get(`/comic/${publicationId}/${issueId}`).then(response => {
@@ -15,7 +16,7 @@ export async function getIssue(publicationId, issueId) {
   });
 }
 
-export async function downloadIssue(issue) {
+export async function downloadIssueAsCbrFile(issue) {
   const fileName = `${issue.title}.cbr`;
   return generateZipFileFromIssueImages(issue)
     .then(eitherJszipFile => {
@@ -39,6 +40,7 @@ function extractIssueFromPage(publicationId, issueId, htmlPage) {
   );
   return new Issue(
     issueId,
+    publicationId,
     title,
     numberOfPages,
     extractIssuePages(publicationId, issueId, numberOfPages)
@@ -69,19 +71,16 @@ async function generateZipFileFromIssueImages(issue) {
   return Promise.all(futureImages)
     .then(base64Images => {
       return new Promise(resolve => {
-        if (!base64Images.every(item => item.isRight())) {
-          resolve(Left());
-        } else {
-          const zipFile = new JSZip();
-          imageNames.forEach((name, index) => {
-            const image = base64Images[index].right().split("base64,");
-            zipFile.file(name, image[1], { base64: true });
-          });
-          resolve(Right(zipFile));
-        }
+        const zipFile = new JSZip();
+        imageNames.forEach((name, index) => {
+          const image = base64Images[index].split("base64,");
+          zipFile.file(name, image[1], { base64: true });
+        });
+        resolve(Right(zipFile));
       });
     })
-    .catch(() => {
+    .catch(error => {
+      log.error(`Error downloading issue: ${error}`);
       return Left();
     });
 }

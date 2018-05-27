@@ -1,6 +1,7 @@
 export class IssueSummary {
-  constructor(id, title, releaseDate) {
+  constructor(id, publicationId, title, releaseDate) {
     this.id = id;
+    this.publicationId = publicationId;
     this.title = title;
     this.releaseDate = releaseDate;
   }

@@ -15,7 +15,8 @@ import { PureFeedScreen } from "../FeedScreen";
 import {
   shallowComponent,
   translator,
-  shallowComponentAsJson
+  shallowComponentAsJson,
+  mockHistory
 } from "../../../testUtils/enzyme";
 import { anyListOfPublications } from "../../../testMothers/publications";
 
@@ -108,5 +109,22 @@ describe("FeedScreen", () => {
     component.instance().onScrollFrame({ top: 0.75 });
 
     expect(onNextPageReached).not.toBeCalled();
+  });
+
+  it("navigates to the clicked publication screen when an item is clicked", () => {
+    const publicationId = "deadpool-2017";
+    const history = mockHistory();
+    const component = shallowComponent(
+      <PureFeedScreen
+        t={translator}
+        history={history}
+        onComponentMounted={jest.fn()}
+        loading={false}
+        loadingNextPage={false}
+      />
+    );
+    component.instance().goToPublicationDetailScreen(publicationId);
+
+    expect(history.push).toBeCalledWith(`/${publicationId}`);
   });
 });

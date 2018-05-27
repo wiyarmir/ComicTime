@@ -20,6 +20,7 @@ class PublicationsFeed extends React.Component {
   componentWillMount() {
     this.updateDimensions();
   }
+
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
   }
@@ -31,6 +32,7 @@ class PublicationsFeed extends React.Component {
   sizeStatus() {
     return { width: window.innerWidth, height: window.innerHeight };
   }
+
   render() {
     const cellHeight = this.cellHeight();
     return (
@@ -45,6 +47,9 @@ class PublicationsFeed extends React.Component {
       <GridTile
         key={index}
         title={publication.title}
+        onClick={() => {
+          this.props.onPublicationSelected(publication.path);
+        }}
         subtitle={
           <span>
             <b>{publication.lastIssuesNumbers.join(", ")}</b>

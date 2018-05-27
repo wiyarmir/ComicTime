@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PublicationDetailScreen shows the progress bar while the publication is fetched 1`] = `
+<ProgressBar
+  hidden={false}
+/>
+`;
+
+exports[`PublicationDetailScreen shows the publication information if it was loaded properly 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <NavigationBar
+    showBackButton={true}
+    title="The Flash"
+  />
+  <Scrollbars
+    autoHeight={false}
+    autoHeightMax={200}
+    autoHeightMin={0}
+    autoHide={false}
+    autoHideDuration={200}
+    autoHideTimeout={1000}
+    hideTracksWhenNotNeeded={false}
+    renderThumbHorizontal={[Function]}
+    renderThumbVertical={[Function]}
+    renderTrackHorizontal={[Function]}
+    renderTrackVertical={[Function]}
+    renderView={[Function]}
+    style={
+      Object {
+        "marginTop": 62,
+      }
+    }
+    tagName="div"
+    thumbMinSize={30}
+    universal={false}
+  >
+    <Paper
+      style={
+        Object {
+          "marginBottom": 20,
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "marginTop": 20,
+          "padding": 20,
+          "width": "90%",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "grid",
+            "gridTemplateColumns": "35% 65%",
+            "marginBottom": 20,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "gridRowEnd": 7,
+              "gridRowStart": 1,
+            }
+          }
+        >
+          <LazyImage
+            alt="The Flash"
+            height={350}
+            placeholder="https://comicimages.com/the-flash-1"
+            src="https://comicimages.com/the-flash-1"
+            style={
+              Object {
+                "backgroundPosition": "0% 0%",
+              }
+            }
+          />
+        </div>
+        <div>
+          <p>
+            <strong
+              style={
+                Object {
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              publicationDetailHeaderTitle
+            </strong>
+             
+            The Flash
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong
+              style={
+                Object {
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              publicationDetailHeaderStatus
+            </strong>
+             
+            Ongoing
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong
+              style={
+                Object {
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              publicationDetailHeaderSummary
+            </strong>
+             
+            The best comic series in the world
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong
+              style={
+                Object {
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              publicationDetailHeaderPublisher
+            </strong>
+             
+            DC
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong
+              style={
+                Object {
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              publicationDetailHeaderReleaseDate
+            </strong>
+             
+            January 2016
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong
+              style={
+                Object {
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              publicationDetailHeaderAuthors
+            </strong>
+             
+            Peter Gomez
+          </p>
+        </div>
+      </div>
+      <List>
+        <ListItem
+          key="1"
+          onClick={[Function]}
+          primaryText="The Flash #1"
+          rightIconButton={<NavigationArrowDownward />}
+          secondaryText="January 2016"
+        />
+        <ListItem
+          key="2"
+          onClick={[Function]}
+          primaryText="The Flash #2"
+          rightIconButton={<NavigationArrowDownward />}
+          secondaryText="February 2016"
+        />
+      </List>
+    </Paper>
+  </Scrollbars>
+</div>
+`;
+
+exports[`PublicationDetailScreen shows the publication not found component if there was an error loading the publication by id 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <NavigationBar
+    showBackButton={true}
+    title=""
+  />
+  <PublicationNotFound />
+</div>
+`;

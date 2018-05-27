@@ -37,6 +37,7 @@ exports[`FeedScreen renders a list of publications if it is not loading 1`] = `
     universal={false}
   >
     <PublicationsFeed
+      onPublicationSelected={[Function]}
       publications={
         Array [
           PublicationSummary {

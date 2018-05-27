@@ -25,16 +25,14 @@ describe("Feed reducer", () => {
     getFeedPage.mockReset();
   });
 
-  it("initialize the store using the initial state configured", () => {
+  it("initializes the store using the initial state configured", () => {
     const store = givenTheComicTimeStore();
-    expect(store.getState()).toEqual({
-      feed: {
-        fetchingPage: false,
-        pageBeingFetched: None(),
-        publications: [],
-        lastPageFetched: None(),
-        errorFetchingPage: None()
-      }
+    expect(store.getState().feed).toEqual({
+      fetchingPage: false,
+      pageBeingFetched: None(),
+      publications: [],
+      lastPageFetched: None(),
+      errorFetchingPage: None()
     });
   });
 
@@ -55,14 +53,12 @@ describe("Feed reducer", () => {
     givenTheFetchPageReturns(Right(anyFirstPageOfPublications));
     await fetchPage(store, 1);
 
-    expect(store.getState()).toEqual({
-      feed: {
-        fetchingPage: false,
-        pageBeingFetched: None(),
-        publications: anyFirstPageOfPublications.data,
-        lastPageFetched: Some(anyFirstPageOfPublications),
-        errorFetchingPage: None()
-      }
+    expect(store.getState().feed).toEqual({
+      fetchingPage: false,
+      pageBeingFetched: None(),
+      publications: anyFirstPageOfPublications.data,
+      lastPageFetched: Some(anyFirstPageOfPublications),
+      errorFetchingPage: None()
     });
   });
 
@@ -74,16 +70,14 @@ describe("Feed reducer", () => {
     givenTheFetchPageReturns(Right(anySecondPageOfPublications));
     await fetchPage(store, 2);
 
-    expect(store.getState()).toEqual({
-      feed: {
-        fetchingPage: false,
-        pageBeingFetched: None(),
-        publications: anyFirstPageOfPublications.data.concat(
-          anySecondPageOfPublications.data
-        ),
-        lastPageFetched: Some(anySecondPageOfPublications),
-        errorFetchingPage: None()
-      }
+    expect(store.getState().feed).toEqual({
+      fetchingPage: false,
+      pageBeingFetched: None(),
+      publications: anyFirstPageOfPublications.data.concat(
+        anySecondPageOfPublications.data
+      ),
+      lastPageFetched: Some(anySecondPageOfPublications),
+      errorFetchingPage: None()
     });
   });
 
@@ -97,14 +91,12 @@ describe("Feed reducer", () => {
     givenTheFetchPageReturns(Right(anyFirstPageOfPublications));
     await fetchPage(store, 1);
 
-    expect(store.getState()).toEqual({
-      feed: {
-        fetchingPage: false,
-        pageBeingFetched: None(),
-        publications: anyFirstPageOfPublications.data,
-        lastPageFetched: Some(anyFirstPageOfPublications),
-        errorFetchingPage: None()
-      }
+    expect(store.getState().feed).toEqual({
+      fetchingPage: false,
+      pageBeingFetched: None(),
+      publications: anyFirstPageOfPublications.data,
+      lastPageFetched: Some(anyFirstPageOfPublications),
+      errorFetchingPage: None()
     });
   });
 
@@ -118,16 +110,14 @@ describe("Feed reducer", () => {
 
     expect(getFeedPage).toBeCalledWith(1);
     expect(getFeedPage).toBeCalledWith(2);
-    expect(store.getState()).toEqual({
-      feed: {
-        fetchingPage: false,
-        pageBeingFetched: None(),
-        publications: anyFirstPageOfPublications.data.concat(
-          anySecondPageOfPublications.data
-        ),
-        lastPageFetched: Some(anySecondPageOfPublications),
-        errorFetchingPage: None()
-      }
+    expect(store.getState().feed).toEqual({
+      fetchingPage: false,
+      pageBeingFetched: None(),
+      publications: anyFirstPageOfPublications.data.concat(
+        anySecondPageOfPublications.data
+      ),
+      lastPageFetched: Some(anySecondPageOfPublications),
+      errorFetchingPage: None()
     });
   });
 
@@ -138,14 +128,12 @@ describe("Feed reducer", () => {
     givenTheFetchPageReturns(Left(responseError));
     await fetchPage(store, 1);
 
-    expect(store.getState()).toEqual({
-      feed: {
-        fetchingPage: false,
-        pageBeingFetched: None(),
-        publications: [],
-        lastPageFetched: None(),
-        errorFetchingPage: Some(responseError)
-      }
+    expect(store.getState().feed).toEqual({
+      fetchingPage: false,
+      pageBeingFetched: None(),
+      publications: [],
+      lastPageFetched: None(),
+      errorFetchingPage: Some(responseError)
     });
   });
 
@@ -160,14 +148,12 @@ describe("Feed reducer", () => {
 
     expect(getFeedPage).toBeCalledWith(1);
     expect(getFeedPage).toBeCalledWith(2);
-    expect(store.getState()).toEqual({
-      feed: {
-        fetchingPage: false,
-        pageBeingFetched: None(),
-        publications: anyFirstPageOfPublications.data,
-        lastPageFetched: Some(anyFirstPageOfPublications),
-        errorFetchingPage: Some(responseError)
-      }
+    expect(store.getState().feed).toEqual({
+      fetchingPage: false,
+      pageBeingFetched: None(),
+      publications: anyFirstPageOfPublications.data,
+      lastPageFetched: Some(anyFirstPageOfPublications),
+      errorFetchingPage: Some(responseError)
     });
   });
 });

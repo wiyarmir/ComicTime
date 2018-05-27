@@ -1,21 +1,27 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import { INDEX } from "../routes";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { INDEX, publicationDetail } from "../routes";
 import FeedScreen from "../feed/components/FeedScreen";
-import { translateComponent } from "../i18n/i18n";
-import DocumentTitle from "react-document-title";
+import PublicationDetailScreen from "../publicationDetail/components/PublicationDetailScreen";
+import Title from "../baseComponents/title/Title";
 
 class App extends React.Component {
   render() {
-    const { t } = this.props;
     return (
-      <BrowserRouter>
-        <DocumentTitle title={t("appName")}>
-          <Route exact path={INDEX} component={FeedScreen} />
-        </DocumentTitle>
-      </BrowserRouter>
+      <Title>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path={INDEX} component={FeedScreen} />
+            <Route
+              exact
+              path={publicationDetail(":id")}
+              component={PublicationDetailScreen}
+            />
+          </Switch>
+        </BrowserRouter>
+      </Title>
     );
   }
 }
 
-export default translateComponent(App);
+export default App;

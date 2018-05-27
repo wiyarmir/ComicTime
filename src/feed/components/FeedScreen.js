@@ -7,6 +7,7 @@ import { translateComponent } from "../../i18n/i18n";
 import ProgressBar from "../../baseComponents/progressBar/ProgressBar";
 import { Scrollbars } from "react-custom-scrollbars";
 import PublicationsFeed from "./PublicationsFeed";
+import { publicationDetail } from "../../routes";
 
 const style = {
   grid: {
@@ -20,9 +21,12 @@ class FeedScreen extends React.Component {
   constructor(props) {
     super(props);
     this.onScrollFrame = this.onScrollFrame.bind(this);
+    this.goToPublicationDetailScreen = this.goToPublicationDetailScreen.bind(
+      this
+    );
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.onComponentMounted();
   }
 
@@ -35,7 +39,10 @@ class FeedScreen extends React.Component {
         <div style={{ height: "100%", width: "100%", position: "absolute" }}>
           <NavigationBar title={t("appName")} />
           <Scrollbars style={style.grid} onScrollFrame={this.onScrollFrame}>
-            <PublicationsFeed publications={this.props.publications} />
+            <PublicationsFeed
+              publications={this.props.publications}
+              onPublicationSelected={id => this.goToPublicationDetailScreen(id)}
+            />
           </Scrollbars>
         </div>
       );
@@ -46,6 +53,11 @@ class FeedScreen extends React.Component {
     if (values.top > nextPageScrollBoundary && !this.props.loadingNextPage) {
       this.props.onNextPageReached();
     }
+  }
+
+  goToPublicationDetailScreen(id) {
+    const url = publicationDetail(id);
+    this.props.history.push(url);
   }
 }
 

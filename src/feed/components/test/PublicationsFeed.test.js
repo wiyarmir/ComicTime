@@ -1,7 +1,11 @@
 import React from "react";
 import PublicationsFeed from "../PublicationsFeed";
-import { shallowComponentAsJson } from "../../../testUtils/enzyme";
+import {
+  shallowComponent,
+  shallowComponentAsJson
+} from "../../../testUtils/enzyme";
 import { anyListOfPublications } from "../../../testMothers/publications";
+import { GridTile } from "material-ui";
 
 describe("PublicationsFeed", () => {
   it("renders an empty publications feed", () => {
@@ -18,5 +22,39 @@ describe("PublicationsFeed", () => {
     );
 
     expect(component).toMatchSnapshot();
+  });
+
+  it("goes to the publication detail on click on the first item", () => {
+    const onPublicationSelected = jest.fn();
+
+    const component = shallowComponent(
+      <PublicationsFeed
+        publications={anyListOfPublications}
+        onPublicationSelected={onPublicationSelected}
+      />
+    );
+    component
+      .find(GridTile)
+      .first()
+      .simulate("click");
+
+    expect(onPublicationSelected).toBeCalledWith("deadpool-2017");
+  });
+
+  it("goes to the publication detail on click on the last item", () => {
+    const onPublicationSelected = jest.fn();
+
+    const component = shallowComponent(
+      <PublicationsFeed
+        publications={anyListOfPublications}
+        onPublicationSelected={onPublicationSelected}
+      />
+    );
+    component
+      .find(GridTile)
+      .last()
+      .simulate("click");
+
+    expect(onPublicationSelected).toBeCalledWith("volcanosaurus-2017");
   });
 });

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title shows the app title by default if it's not configured 1`] = `
+<SideEffect(DocumentTitle)
+  title="appName"
+/>
+`;
+
+exports[`Title shows the title prop instead of the app name if it's configured properly 1`] = `
+<SideEffect(DocumentTitle)
+  title="The Flash #1"
+/>
+`;

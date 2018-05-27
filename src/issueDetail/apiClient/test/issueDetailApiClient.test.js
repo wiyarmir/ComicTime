@@ -1,3 +1,8 @@
+import {
+  anyIssueId,
+  anyPublicationId
+} from "../../../testMothers/publicationDetails";
+
 jest.mock("../../../utils/imageUtils", () => {
   return {
     downloadImageUrlAsBase64: jest.fn()
@@ -11,15 +16,12 @@ jest.mock("../../../utils/jszipUtils", () => {
 import nock from "nock";
 import { baseUrl, composeResourceUrl } from "../../../apiClient/apiClient";
 import { NetworkError, UnknownError, NotFound } from "../../../apiClient/model";
-import { downloadIssue, getIssue } from "../issueDetailApiClient";
+import { downloadIssueAsCbrFile, getIssue } from "../issueDetailApiClient";
 import { issueResponse } from "./resources/issueDetailApiClientResponses";
 import { downloadImageUrlAsBase64 } from "../../../utils/imageUtils";
 import { downloadFile } from "../../../utils/jszipUtils";
 import { Right, Left } from "monet";
 import { anyBase64Image } from "./resources/base64images";
-
-const anyPublicationId = "the-flash-2016";
-const anyIssueId = "Annual1";
 
 describe("Issue detail API Client", () => {
   beforeEach(() => {
@@ -81,7 +83,7 @@ describe("Issue detail API Client", () => {
     const fileName = `${issue.title}.cbr`;
     givenThatIssuePagesAreDownloadedProperly(fileName);
 
-    const file = await downloadIssue(issue);
+    const file = await downloadIssueAsCbrFile(issue);
 
     expect(file.isRight()).toBeTruthy();
   });
@@ -92,7 +94,7 @@ describe("Issue detail API Client", () => {
     const issue = getIssueResult.right();
     givenTheIssuePagesAreNotDownloadedProperly();
 
-    const file = await downloadIssue(issue);
+    const file = await downloadIssueAsCbrFile(issue);
 
     expect(file.isRight()).toBeFalsy();
   });
@@ -103,7 +105,7 @@ function givenTheIssuePagesAreNotDownloadedProperly() {
 }
 
 function givenThatIssuePagesAreDownloadedProperly(fileName) {
-  const result = Promise.resolve(Right(anyBase64Image));
+  const result = Promise.resolve(anyBase64Image);
   downloadImageUrlAsBase64.mockReturnValue(result);
   downloadFile.mockReturnValue(Promise.resolve(Right(fileName)));
 }

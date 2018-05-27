@@ -2,10 +2,12 @@ import nock from "nock";
 import { baseUrl, composeResourceUrl } from "../../../apiClient/apiClient";
 import { NetworkError, UnknownError, NotFound } from "../../../apiClient/model";
 import { getPublication } from "../publicationDetailApiClient";
-import { publicationResponse } from "./resources/publicationDetailApiResponses";
+import {
+  publicationNotFoundResponse,
+  publicationResponse
+} from "./resources/publicationDetailApiResponses";
 import { IssueSummary } from "../../model";
-
-const anyPublicationId = "the-flash-2016";
+import { anyPublicationId } from "../../../testMothers/publicationDetails";
 
 describe("Publication detail API Client", () => {
   it("returns an unknown error if the response status code is an error", async () => {
@@ -35,7 +37,7 @@ describe("Publication detail API Client", () => {
 
     const result = await getPublication(anyPublicationId);
 
-    const publication = result.right().value;
+    const publication = result.right();
     expect(publication.id).toEqual(anyPublicationId);
     expect(publication.title).toEqual("The Flash (2016-)");
     expect(publication.image).toEqual(
@@ -43,11 +45,11 @@ describe("Publication detail API Client", () => {
     );
     expect(publication.status.val).toEqual("Ongoing");
     expect(publication.summary).toEqual(
-      "&quot;LIGHTNING STRIKES TWICE&quot; Chapter One\n" +
+      '"LIGHTNING STRIKES TWICE" Chapter One\n' +
         "\n" +
-        "A new storm brews over Central City and disproves the old adage about lightning never, well...you know. Just as Barry begins to feel overwhelmed fighting crime, a new speedster debuts&#x2014;but just where did this amazing new friend come from?\n" +
+        "A new storm brews over Central City and disproves the old adage about lightning never, well...you know. Just as Barry begins to feel overwhelmed fighting crime, a new speedster debuts—but just where did this amazing new friend come from?\n" +
         "\n" +
-        "FLASH FACT: &quot;2016 is the 60th anniversary of Barry Allen becoming The Flash, and it&apos;s a privilege to be a part of it,&quot; says writer Joshua Williamson. &quot;&apos;The Return of Barry Allen&apos; in FLASH #79 [1993] is one of my favorite comics of all time. It&apos;s where I became a Flash fan for life.&quot;"
+        "FLASH FACT: \"2016 is the 60th anniversary of Barry Allen becoming The Flash, and it's a privilege to be a part of it,\" says writer Joshua Williamson. \"'The Return of Barry Allen' in FLASH #79 [1993] is one of my favorite comics of all time. It's where I became a Flash fan for life.\""
     );
     expect(publication.publisher.val).toEqual("DC Comics");
     expect(publication.releaseDate.val).toEqual("2016");
@@ -55,7 +57,12 @@ describe("Publication detail API Client", () => {
     expect(publication.issues.length).toEqual(47);
     const firstIssueInTheList = publication.issues[0];
     expect(firstIssueInTheList).toEqual(
-      new IssueSummary("Annual1", "The Flash (2016-) #Annual 1", "31 Jan. 2018")
+      new IssueSummary(
+        "Annual1",
+        "the-flash-2016",
+        "The Flash (2016-) #Annual 1",
+        "31 Jan. 2018"
+      )
     );
   });
 
@@ -81,7 +88,7 @@ function givenThereIsNoConnection() {
 function givenThePublicationDoesNotExist(id) {
   nock(baseUrl)
     .get(composeResourceUrl(`/comic/${id}`))
-    .reply(404);
+    .reply(200, publicationNotFoundResponse);
 }
 
 function givenTheApiReturnsThePublicationInformation(id) {

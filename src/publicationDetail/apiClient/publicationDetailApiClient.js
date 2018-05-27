@@ -1,11 +1,13 @@
 import { get } from "../../apiClient/apiClient";
 import cheerio from "cheerio";
-import { Some, None, Right } from "monet";
+import { Some, None, Right, Maybe, Left } from "monet";
 import { Publication, IssueSummary } from "../model";
 
 export async function getPublication(id) {
   return get(`/comic/${id}`).then(response => {
-    return response.map(htmlPage => extractPublicationFromPage(id, htmlPage));
+    return response.flatMap(htmlPage =>
+      extractPublicationFromPage(id, htmlPage)
+    );
   });
 }
 
@@ -14,6 +16,9 @@ function extractPublicationFromPage(id, htmlPage) {
   const image = loadedPage(".img-responsive")
     .first()
     .attr("src");
+  if (Maybe.fromNull(image).isNone()) {
+    return Left();
+  }
   const title = loadedPage(".listmanga-header")
     .first()
     .text()
@@ -21,7 +26,7 @@ function extractPublicationFromPage(id, htmlPage) {
   const status = extractStatus(loadedPage);
   const summary = loadedPage(".manga.well p")
     .first()
-    .html()
+    .text()
     .trim();
   const infoTableTitles = loadedPage(".dl-horizontal dt");
   const infoTableValues = loadedPage(".dl-horizontal dd");
@@ -43,7 +48,7 @@ function extractPublicationFromPage(id, htmlPage) {
     const loadedAuthorLink = cheerio.load(authorLink);
     return loadedAuthorLink.text().trim();
   });
-  const issues = extractIssues(loadedPage);
+  const issues = extractIssues(id, loadedPage);
   return Right(
     new Publication(
       id,
@@ -77,11 +82,11 @@ function extractElementFromInfoTable(
   let result = None();
   infoTableTitles.each((index, elem) => {
     const loadedElement = cheerio(elem);
-    if (loadedElement.html().trim() === elementName && !result.isValue) {
+    if (loadedElement.text().trim() === elementName && !result.isValue) {
       result = Some(
         infoTableValues
           .eq(index)
-          .html()
+          .text()
           .trim()
       );
     }
@@ -89,7 +94,7 @@ function extractElementFromInfoTable(
   return result;
 }
 
-function extractIssues(loadedPage) {
+function extractIssues(publicationId, loadedPage) {
   const issues = [];
   const chaptersReleaseDate = loadedPage(".date-chapter-title-rtl");
   loadedPage(".chapters li h5 a").each((index, elem) => {
@@ -102,9 +107,9 @@ function extractIssues(loadedPage) {
     const title = loadedElem.html().trim();
     const releaseDate = chaptersReleaseDate
       .eq(index)
-      .html()
+      .text()
       .trim();
-    issues.push(new IssueSummary(id, title, releaseDate));
+    issues.push(new IssueSummary(id, publicationId, title, releaseDate));
   });
   return issues;
 }

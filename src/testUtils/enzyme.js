@@ -12,7 +12,8 @@ Enzyme.configure({ adapter: new Adapter() });
 export function mockHistory() {
   return {
     go: jest.fn(),
-    goBack: jest.fn()
+    goBack: jest.fn(),
+    push: jest.fn()
   };
 }
 
