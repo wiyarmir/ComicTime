@@ -6,7 +6,9 @@ import { withRouter } from "react-router";
 import { connect } from "react-redux";
 import { INDEX } from "../../routes";
 import ComicTimeLogo from "../comicTimeLogo/ComicTimeLogo";
-
+import githubLogo from "../images/githubLogo.svg";
+import { translateComponent } from "../../i18n/i18n";
+import SearchPublicationAutoComplete from "../../search/components/SearchPublicationAutoComplete";
 const style = {
   position: "fixed",
   top: 0
@@ -16,9 +18,11 @@ class NavigationBar extends React.Component {
   constructor(props) {
     super(props);
     this.onLeftIconButtonClick = this.onLeftIconButtonClick.bind(this);
+    this.openGitHubProjectPage = this.openGitHubProjectPage.bind(this);
   }
 
   render() {
+    const { t } = this.props;
     return (
       <div>
         <AppBar
@@ -26,6 +30,14 @@ class NavigationBar extends React.Component {
           onLeftIconButtonClick={this.onLeftIconButtonClick}
           iconElementLeft={this.leftIcon()}
           style={style}
+          iconElementRight={
+            <div>
+              <SearchPublicationAutoComplete />
+              <IconButton onClick={this.openGitHubProjectPage}>
+                <img src={githubLogo} alt={t("githubLogo")} />
+              </IconButton>
+            </div>
+          }
         />
       </div>
     );
@@ -54,6 +66,10 @@ class NavigationBar extends React.Component {
       this.props.history.go(INDEX);
     }
   }
+
+  openGitHubProjectPage() {
+    window.open("https://github.com/ComicTime/ComicTime", "_blank");
+  }
 }
 
 NavigationBar.propTypes = {
@@ -71,6 +87,6 @@ function mapDispatchToProps() {
 }
 
 export const PureNavigationBar = NavigationBar;
-export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(PureNavigationBar)
+export default translateComponent(
+  withRouter(connect(mapStateToProps, mapDispatchToProps)(PureNavigationBar))
 );

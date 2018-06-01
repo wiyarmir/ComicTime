@@ -9,7 +9,9 @@ const translations = {
     publicationDetailHeaderReleaseDate: "Release date:",
     publicationDetailHeaderAuthors: "Authors:",
     publicationNotFoundMessage: "Ups, we could't find your comic",
-    downloadWidgetCounterTitle: "Downloads:"
+    downloadWidgetCounterTitle: "Downloads:",
+    githubLogo: "GitHub logo",
+    searchHint: "Search..."
   }
 };
 

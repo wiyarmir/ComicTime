@@ -14,6 +14,24 @@ exports[`NavigationBar renders the navigation bar using the app logo as left ico
         <ComicTimeLogo />
       </IconButton>
     }
+    iconElementRight={
+      <div>
+        <SearchPublicationAutoComplete />
+        <IconButton
+          disableTouchRipple={false}
+          disabled={false}
+          iconStyle={Object {}}
+          onClick={[Function]}
+          tooltipPosition="bottom-center"
+          touch={false}
+        >
+          <img
+            alt="githubLogo"
+            src="githubLogo.svg"
+          />
+        </IconButton>
+      </div>
+    }
     onLeftIconButtonClick={[Function]}
     showMenuIconButton={true}
     style={
@@ -41,6 +59,24 @@ exports[`NavigationBar renders the navigation bar using the back button instead 
       >
         <NavigationArrowBack />
       </IconButton>
+    }
+    iconElementRight={
+      <div>
+        <SearchPublicationAutoComplete />
+        <IconButton
+          disableTouchRipple={false}
+          disabled={false}
+          iconStyle={Object {}}
+          onClick={[Function]}
+          tooltipPosition="bottom-center"
+          touch={false}
+        >
+          <img
+            alt="githubLogo"
+            src="githubLogo.svg"
+          />
+        </IconButton>
+      </div>
     }
     onLeftIconButtonClick={[Function]}
     showMenuIconButton={true}

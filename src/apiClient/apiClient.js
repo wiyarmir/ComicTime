@@ -7,11 +7,10 @@ import { NetworkError, NotFound, UnknownError } from "./model";
 const restClient = rest.wrap(mime);
 
 export const baseUrl = "https://allorigins.me";
+export const baseHost = "http://readcomicsonline.ru";
 
 export function composeResourceUrl(resource) {
-  return (
-    "/get?url=" + encodeURIComponent(`http://readcomicsonline.ru${resource}`)
-  );
+  return "/get?url=" + encodeURIComponent(`${baseHost}${resource}`);
 }
 
 export function get(resource) {
