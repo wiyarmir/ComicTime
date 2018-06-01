@@ -78,6 +78,20 @@ If you would like to contribute code to this repository you can do so through Gi
 * Review if your changes affects the repository documentation and update it.
 * Describe the PR content and don't hesitate to add comments to explain us why you've added or changed something.
 
+## FAQs
+
+* **Do you store any document shown in this web page?**
+    * Nope, we get the information from a web site already published and storing this content for us.
+
+* **Why do you perform all this heavy work on client-side instead of developing a back-end?**
+    * I don't want to code a backend, I just want to read issues. This solution was pragmatic enough for fulfilling my expectations.
+
+* **Why an open source project?**
+    * Why not? Maybe any other comic fan and developer would like to contribute :smiley:.
+
+* **Why do you describe the content of your pull requests instead of just pushing directly to master?**
+    * Maybe my pull requests could be helpful for someone writing a similar page using a similar technology.
+
 ## Contributors
 
 * Pedro Vicente Gómez Sánchez - <pedrovicente.gomez@gmail.com> <a href="https://twitter.com/pedro_g_s"><img alt="Follow me on Twitter" src="https://image.freepik.com/iconos-gratis/twitter-logo_318-40209.jpg" height="20" width="20"/></a> <a href="https://es.linkedin.com/in/pedrovgs"><img alt="Add me to Linkedin" src="https://image.freepik.com/iconos-gratis/boton-del-logotipo-linkedin_318-84979.png" height="20" width="20"/></a>

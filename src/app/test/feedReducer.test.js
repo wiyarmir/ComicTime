@@ -81,7 +81,7 @@ describe("Feed reducer", () => {
     });
   });
 
-  it("removes all the content already loaded if the first page is requested again", async () => {
+  it("does not remove all the content already loaded if the first page is requested again", async () => {
     const store = givenTheComicTimeStore();
 
     givenTheFetchPageReturns(Right(anyFirstPageOfPublications));
@@ -94,8 +94,10 @@ describe("Feed reducer", () => {
     expect(store.getState().feed).toEqual({
       fetchingPage: false,
       pageBeingFetched: None(),
-      publications: anyFirstPageOfPublications.data,
-      lastPageFetched: Some(anyFirstPageOfPublications),
+      publications: anyFirstPageOfPublications.data.concat(
+        anySecondPageOfPublications.data
+      ),
+      lastPageFetched: Some(anySecondPageOfPublications),
       errorFetchingPage: None()
     });
   });

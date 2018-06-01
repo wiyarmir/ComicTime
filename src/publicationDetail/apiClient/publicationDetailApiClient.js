@@ -109,7 +109,15 @@ function extractIssues(publicationId, loadedPage) {
       .eq(index)
       .text()
       .trim();
-    issues.push(new IssueSummary(id, publicationId, title, releaseDate));
+    issues.push(
+      new IssueSummary(
+        publicationId + "-" + id,
+        publicationId,
+        id,
+        title,
+        releaseDate
+      )
+    );
   });
   return issues;
 }

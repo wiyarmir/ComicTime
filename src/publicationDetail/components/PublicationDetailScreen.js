@@ -141,7 +141,13 @@ class PublicationDetailScreen extends React.Component {
                   key={issue.id}
                   primaryText={issue.title}
                   secondaryText={issue.releaseDate}
-                  rightIconButton={<ArrowDownward />}
+                  rightIconButton={
+                    <ArrowDownward
+                      onClick={() => {
+                        this.props.onIssueClick(issue);
+                      }}
+                    />
+                  }
                   onClick={() => {
                     this.props.onIssueClick(issue);
                   }}

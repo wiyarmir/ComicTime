@@ -58,8 +58,9 @@ describe("Publication detail API Client", () => {
     const firstIssueInTheList = publication.issues[0];
     expect(firstIssueInTheList).toEqual(
       new IssueSummary(
-        "Annual1",
+        "the-flash-2016-Annual1",
         "the-flash-2016",
+        "Annual1",
         "The Flash (2016-) #Annual 1",
         "31 Jan. 2018"
       )

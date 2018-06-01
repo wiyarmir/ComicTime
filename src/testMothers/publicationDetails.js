@@ -15,8 +15,20 @@ export const anyPublication = new Publication(
   Some("January 2016"),
   Some("Peter Gomez"),
   [
-    new IssueSummary("1", "the-flash-2016", "The Flash #1", "January 2016"),
-    new IssueSummary("2", "the-flash-2016", "The Flash #2", "February 2016")
+    new IssueSummary(
+      "1",
+      "the-flash-2016",
+      "1",
+      "The Flash #1",
+      "January 2016"
+    ),
+    new IssueSummary(
+      "2",
+      "the-flash-2016",
+      "2",
+      "The Flash #2",
+      "February 2016"
+    )
   ]
 );
 

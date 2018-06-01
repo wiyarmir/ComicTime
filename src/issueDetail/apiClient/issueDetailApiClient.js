@@ -16,9 +16,9 @@ export async function getIssue(publicationId, issueId) {
   });
 }
 
-export async function downloadIssueAsCbzFile(issue) {
+export async function downloadIssueAsCbzFile(issue, updateCallback) {
   const fileName = `${issue.title}.cbz`;
-  return generateZipFileFromIssueImages(issue)
+  return generateZipFileFromIssueImages(issue, updateCallback)
     .then(eitherJszipFile => {
       return eitherJszipFile.map(jszipFile => {
         return downloadFile(jszipFile, fileName).then(file => Right(file));
@@ -33,13 +33,13 @@ function extractIssueFromPage(publicationId, issueId, htmlPage) {
   const loadedPage = cheerio.load(htmlPage);
   const title = loadedPage(".pager-cnt a")
     .first()
-    .html();
+    .text();
   const numberOfPages = parseInt(
     loadedPage("#page-list").attr("data-size"),
     10
   );
   return new Issue(
-    issueId,
+    publicationId + "-" + issueId,
     publicationId,
     title,
     numberOfPages,
@@ -61,9 +61,12 @@ function extractIssuePages(publicationId, issueId, numberOfPages) {
   return issuePages;
 }
 
-async function generateZipFileFromIssueImages(issue) {
+async function generateZipFileFromIssueImages(issue, updateCallback) {
   const futureImages = issue.pages.map(page => {
-    return downloadImageUrlAsBase64(page.image);
+    return downloadImageUrlAsBase64(page.image).then(result => {
+      updateCallback(page.number, issue.pages.length);
+      return result;
+    });
   });
   const imageNames = issue.pages.map(
     page => `${issue.title} - ${formatNumberWithTwoDigits(page.number)}.jpeg`

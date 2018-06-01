@@ -13,3 +13,22 @@ export class Issue {
     this.pages = pages;
   }
 }
+
+export class IssueDownloadUpdate {
+  constructor(issue, lastPageDownloaded, totalNumberOfPages) {
+    this.issue = issue;
+    this.lastPageDownloaded = lastPageDownloaded;
+    this.totalNumberOfPages = totalNumberOfPages;
+  }
+}
+
+export class IssueDownloadProgress {
+  constructor(issue, progress) {
+    this.issue = issue;
+    this.progress = progress;
+  }
+
+  downloadCompreted() {
+    return this.progress === 1.0;
+  }
+}

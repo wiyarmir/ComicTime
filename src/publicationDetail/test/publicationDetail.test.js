@@ -39,9 +39,12 @@ describe("Publication detail reducer", () => {
       publicationSelected: None(),
       fetchingPublication: true,
       errorFetchingPublication: None(),
-      issueBeingDownloaded: None(),
-      lastIssueBeingDownloaded: None(),
-      errorDownloadingIssue: None()
+      downloadsInitiated: 0,
+      issuesBeingDownloaded: [],
+      issuePageDownloadStatus: {},
+      issuePercentageDownloadStatus: {},
+      lastIssuesDownloadedProperly: [],
+      errorsDownloadingIssue: []
     });
   });
 
@@ -65,9 +68,12 @@ describe("Publication detail reducer", () => {
       publicationSelected: Some(anyPublication),
       fetchingPublication: false,
       errorFetchingPublication: None(),
-      issueBeingDownloaded: None(),
-      lastIssueBeingDownloaded: None(),
-      errorDownloadingIssue: None()
+      downloadsInitiated: 0,
+      issuesBeingDownloaded: [],
+      issuePageDownloadStatus: {},
+      issuePercentageDownloadStatus: {},
+      lastIssuesDownloadedProperly: [],
+      errorsDownloadingIssue: []
     });
   });
 
@@ -81,9 +87,12 @@ describe("Publication detail reducer", () => {
       publicationSelected: None(),
       fetchingPublication: false,
       errorFetchingPublication: Some(""),
-      issueBeingDownloaded: None(),
-      lastIssueBeingDownloaded: None(),
-      errorDownloadingIssue: None()
+      downloadsInitiated: 0,
+      issuesBeingDownloaded: [],
+      issuePageDownloadStatus: {},
+      issuePercentageDownloadStatus: {},
+      lastIssuesDownloadedProperly: [],
+      errorsDownloadingIssue: []
     });
   });
 
@@ -94,7 +103,7 @@ describe("Publication detail reducer", () => {
     downloadIssueSummary(store, anyIssueSummary);
 
     const state = store.getState().publicationDetail;
-    expect(state.issueBeingDownloaded).toEqual(Some(anyIssueSummary));
+    expect(state.issuesBeingDownloaded).toEqual([anyIssueSummary]);
   });
 
   it("saves the error found while downloading the issue if something went wrong getting the issue detailed information", async () => {
@@ -107,9 +116,12 @@ describe("Publication detail reducer", () => {
       publicationSelected: None(),
       fetchingPublication: true,
       errorFetchingPublication: None(),
-      issueBeingDownloaded: None(),
-      lastIssueBeingDownloaded: Some(anyIssueSummary),
-      errorDownloadingIssue: Some("")
+      downloadsInitiated: 1,
+      issuesBeingDownloaded: [],
+      lastIssuesDownloadedProperly: [],
+      errorsDownloadingIssue: [anyIssueSummary],
+      issuePageDownloadStatus: {},
+      issuePercentageDownloadStatus: {}
     });
   });
 
@@ -124,9 +136,12 @@ describe("Publication detail reducer", () => {
       publicationSelected: None(),
       fetchingPublication: true,
       errorFetchingPublication: None(),
-      issueBeingDownloaded: None(),
-      lastIssueBeingDownloaded: Some(anyIssueSummary),
-      errorDownloadingIssue: Some("")
+      downloadsInitiated: 1,
+      issuesBeingDownloaded: [],
+      lastIssuesDownloadedProperly: [],
+      errorsDownloadingIssue: [anyIssueSummary],
+      issuePageDownloadStatus: {},
+      issuePercentageDownloadStatus: {}
     });
   });
 
@@ -141,9 +156,12 @@ describe("Publication detail reducer", () => {
       publicationSelected: None(),
       fetchingPublication: true,
       errorFetchingPublication: None(),
-      issueBeingDownloaded: None(),
-      lastIssueBeingDownloaded: Some(anyIssueSummary),
-      errorDownloadingIssue: None()
+      downloadsInitiated: 1,
+      issuesBeingDownloaded: [],
+      lastIssuesDownloadedProperly: [anyIssueSummary],
+      errorsDownloadingIssue: [],
+      issuePageDownloadStatus: {},
+      issuePercentageDownloadStatus: {}
     });
   });
 });

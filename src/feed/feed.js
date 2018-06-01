@@ -8,8 +8,9 @@ const ERROR_FETCHING_FEED_PAGE = "ERROR_FETCHING_FEED_PAGE";
 
 export function fetchNextPublicationsPage() {
   return (dispatch, getState) => {
-    const nextPage = getState()
-      .feed.lastPageFetched.map(page => {
+    const state = getState();
+    const nextPage = state.feed.lastPageFetched
+      .map(page => {
         return page.page + 1;
       })
       .orElse(1).val;
@@ -18,7 +19,10 @@ export function fetchNextPublicationsPage() {
 }
 
 export function fetchPublications(page = 1) {
-  return dispatch => {
+  return (dispatch, getState) => {
+    if (page === 1 && getState().feed.publications.length > 0) {
+      return;
+    }
     dispatch(fetchingPage(page));
     getFeedPage(page).then(result => {
       log.debug(result);

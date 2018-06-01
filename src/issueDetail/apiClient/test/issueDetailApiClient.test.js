@@ -59,7 +59,7 @@ describe("Issue detail API Client", () => {
     const result = await getIssue(anyPublicationId, anyIssueId);
 
     const issue = result.right();
-    expect(issue.id).toEqual(anyIssueId);
+    expect(issue.id).toEqual(anyPublicationId + "-" + anyIssueId);
     expect(issue.title).toEqual("The Flash (2016-) #Annual 1");
     expect(issue.numberOfPages).toEqual(20);
     const firstPage = issue.pages[0];
@@ -83,7 +83,7 @@ describe("Issue detail API Client", () => {
     const fileName = `${issue.title}.cbz`;
     givenThatIssuePagesAreDownloadedProperly(fileName);
 
-    const file = await downloadIssueAsCbzFile(issue);
+    const file = await downloadIssueAsCbzFile(issue, jest.fn());
 
     expect(file.isRight()).toBeTruthy();
   });

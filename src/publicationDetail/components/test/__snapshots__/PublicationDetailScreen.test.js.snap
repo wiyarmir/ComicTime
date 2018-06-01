@@ -179,14 +179,22 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
           key="1"
           onClick={[Function]}
           primaryText="The Flash #1"
-          rightIconButton={<NavigationArrowDownward />}
+          rightIconButton={
+            <NavigationArrowDownward
+              onClick={[Function]}
+            />
+          }
           secondaryText="January 2016"
         />
         <ListItem
           key="2"
           onClick={[Function]}
           primaryText="The Flash #2"
-          rightIconButton={<NavigationArrowDownward />}
+          rightIconButton={
+            <NavigationArrowDownward
+              onClick={[Function]}
+            />
+          }
           secondaryText="February 2016"
         />
       </List>

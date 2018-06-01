@@ -2,7 +2,7 @@
 
 exports[`Issue detail API Client returns an issue with all the pages found 1`] = `
 Issue {
-  "id": "Annual1",
+  "id": "the-flash-2016-Annual1",
   "numberOfPages": 20,
   "pages": Array [
     IssuePage {

@@ -8,7 +8,8 @@ const translations = {
     publicationDetailHeaderPublisher: "Editorial:",
     publicationDetailHeaderReleaseDate: "Fecha de publicación:",
     publicationDetailHeaderAuthors: "Autores:",
-    publicationNotFoundMessage: "Ups, no podimos encontrar tu comic"
+    publicationNotFoundMessage: "Ups, no podimos encontrar tu comic",
+    downloadWidgetCounterTitle: "Descargas:"
   }
 };
 
