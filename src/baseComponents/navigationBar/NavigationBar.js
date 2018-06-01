@@ -19,28 +19,80 @@ class NavigationBar extends React.Component {
     super(props);
     this.onLeftIconButtonClick = this.onLeftIconButtonClick.bind(this);
     this.openGitHubProjectPage = this.openGitHubProjectPage.bind(this);
+    this.updateDimensions = this.updateDimensions.bind(this);
+    this.sizeStatus = this.sizeStatus.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+  }
+
+  componentWillMount() {
+    this.updateDimensions();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
+
+  updateDimensions() {
+    this.setState(this.sizeStatus());
+  }
+
+  sizeStatus() {
+    return { width: window.innerWidth, height: window.innerHeight };
   }
 
   render() {
-    const { t } = this.props;
     return (
       <div>
         <AppBar
-          title={this.props.title}
+          title={this.title()}
           onLeftIconButtonClick={this.onLeftIconButtonClick}
           iconElementLeft={this.leftIcon()}
           style={style}
-          iconElementRight={
-            <div>
-              <SearchPublicationAutoComplete />
-              <IconButton onClick={this.openGitHubProjectPage}>
-                <img src={githubLogo} alt={t("githubLogo")} />
-              </IconButton>
-            </div>
-          }
+          iconElementRight={this.rightIcon()}
         />
       </div>
     );
+  }
+
+  rightIcon() {
+    const { t } = this.props;
+    return (
+      <div>
+        <SearchPublicationAutoComplete />
+        {this.gitHubIcon(t)}
+      </div>
+    );
+  }
+
+  gitHubIcon(t) {
+    if (this.renderingInAReallySmallDevice()) {
+      return null;
+    } else {
+      return (
+        <IconButton onClick={this.openGitHubProjectPage}>
+          <img src={githubLogo} alt={t("githubLogo")} />
+        </IconButton>
+      );
+    }
+  }
+
+  title() {
+    if (this.renderingInADeviceWhereTheTitleDoesNotFit()) {
+      return "";
+    } else {
+      return this.props.title;
+    }
+  }
+
+  renderingInADeviceWhereTheTitleDoesNotFit() {
+    return this.state.width <= 510;
+  }
+
+  renderingInAReallySmallDevice() {
+    return this.state.width <= 400;
   }
 
   leftIcon() {

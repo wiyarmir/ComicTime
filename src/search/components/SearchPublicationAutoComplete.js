@@ -7,7 +7,8 @@ import debounce from "lodash/debounce";
 import { withRouter } from "react-router";
 const style = {
   hint: { color: "rgba(255,255,255, 0.7)" },
-  list: { textColor: "#000000" }
+  list: { textColor: "#000000" },
+  color: "#ffffff"
 };
 class SearchPublicationAutoComplete extends React.Component {
   constructor(props) {
@@ -33,6 +34,7 @@ class SearchPublicationAutoComplete extends React.Component {
         dataSource={dataSource}
         dataSourceConfig={dataSourceConfig}
         onUpdateInput={this.onSearch}
+        inputStyle={style}
         hintStyle={style.hint}
         menuProps={{ menuItemStyle: { color: "#000000" } }}
         filter={AutoComplete.fuzzyFilter}

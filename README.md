@@ -1,6 +1,10 @@
 # <img alt="Buzz" src="./art/logo.svg" height="60" width="60"/> Comic Time [![Build Status](https://travis-ci.org/ComicTime/ComicTime.svg?branch=master)](https://travis-ci.org/ComicTime/ComicTime)
 
-Allow any user to easily read comics, without any prerequisites.
+Allow any user to easily read comics, without any prerequisites. [Go to Comic Time](https://is-comic-time.firebaseapp.com)
+
+![feed](./art/screencasts/feed.gif)
+![detail](./art/screencasts/detail.gif)
+![search](./art/screencasts/search.gif)
 
 ## Running this project:
 
@@ -65,6 +69,17 @@ You can find the the Goolge Analytics tracking number after creating the project
 ## Linter:
 
 This repository uses [eslint](https://eslint.org/) in order to check if the js code written matches the checkstyle configured. You can check if everything is ok by executing ``yarn lint`` and automatically fix the issues by executing ``yarn fixLint`` if needed.
+
+## Hosting:
+
+For now, this project is being hosted as a single page applicaition in [Firebase](https://firebase.google.com/docs/hosting). If you'd like to do the same you only need to create a Firebase project, execute the following commands and follow the instructions:
+
+```
+yarn firebase init
+yarn firebase deploy
+```
+
+If the deploy finish as expected, you'll see a url you can access from your browser.
 
 ## Contributing
 

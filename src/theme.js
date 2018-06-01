@@ -7,7 +7,7 @@ const comicTimeTheme = getMuiTheme({
     primary2Color: "#ba000c",
     accent1Color: "#ffd34a",
     accent2Color: "#ffff7c",
-    textColor: "#ffffff",
+    textColor: "#000000",
     alternateTextColor: "#ffffff"
   }
 });

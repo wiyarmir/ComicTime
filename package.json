@@ -34,6 +34,7 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
     "rest": "^2.0.0",
+    "serve": "^7.2.0",
     "styled-components": "^3.2.6",
     "webfontloader": "^1.6.28"
   },
@@ -56,6 +57,7 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
+    "firebase-tools": "^3.18.5",
     "jsverify": "^0.8.3",
     "prettier": "^1.12.1"
   }

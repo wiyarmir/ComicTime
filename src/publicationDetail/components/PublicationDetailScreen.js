@@ -24,7 +24,7 @@ class PublicationDetailScreen extends React.Component {
   }
 
   componentWillMount() {
-    let publicationId = this.props.match.params.id;
+    const publicationId = this.props.match.params.id;
     this.props.onComponentMounted(publicationId);
     this.updateDimensions();
   }
@@ -43,6 +43,14 @@ class PublicationDetailScreen extends React.Component {
 
   sizeStatus() {
     return { width: window.innerWidth, height: window.innerHeight };
+  }
+
+  componentDidUpdate(prevProps) {
+    const oldPublicationId = prevProps.match.params.id;
+    const publicationId = this.props.match.params.id;
+    if (oldPublicationId !== publicationId) {
+      this.props.onComponentMounted(publicationId);
+    }
   }
 
   render() {

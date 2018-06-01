@@ -21,6 +21,11 @@ exports[`PublicationsFeed renders the publication feed based on the list of publ
     key="0"
     onClick={[Function]}
     rows={1}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
     subtitle={
       <span>
         <b>
@@ -48,6 +53,11 @@ exports[`PublicationsFeed renders the publication feed based on the list of publ
     key="1"
     onClick={[Function]}
     rows={1}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
     subtitle={
       <span>
         <b>

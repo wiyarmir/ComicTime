@@ -45,6 +45,7 @@ class PublicationsFeed extends React.Component {
   renderGridTiles(cellHeight) {
     return this.props.publications.map((publication, index) => (
       <GridTile
+        style={{ cursor: "pointer" }}
         key={index}
         title={publication.title}
         onClick={() => {
