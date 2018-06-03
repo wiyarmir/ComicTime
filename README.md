@@ -1,6 +1,6 @@
 # <img alt="Buzz" src="./art/logo.svg" height="60" width="60"/> Comic Time [![Build Status](https://travis-ci.org/ComicTime/ComicTime.svg?branch=master)](https://travis-ci.org/ComicTime/ComicTime)
 
-Allow any user to easily read comics, without any prerequisites. [Go to Comic Time](https://is-comic-time.firebaseapp.com)
+Allow any user to easily read comics, without any prerequisites. [Go to Comic Time](https://comictime.app)
 
 ![feed](./art/screencasts/feed.gif)
 ![detail](./art/screencasts/detail.gif)

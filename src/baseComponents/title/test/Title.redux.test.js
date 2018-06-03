@@ -1,3 +1,5 @@
+import { anyPublication } from "../../../testMothers/publicationDetails";
+
 jest.mock("../../../i18n/i18n");
 
 import { Some, None } from "monet";
@@ -5,18 +7,14 @@ import { mapStateToProps } from "../Title";
 
 describe("Title redux integration", () => {
   it("should map the publication loaded title as the component property title", () => {
-    const anyPublicationTitle = "Batman #1";
-
     const props = mapStateToProps({
       publicationDetail: {
-        publicationSelected: Some({
-          title: anyPublicationTitle
-        })
+        publicationSelected: Some(anyPublication)
       }
     });
 
     expect(props).toEqual({
-      title: anyPublicationTitle
+      publication: anyPublication
     });
   });
 
@@ -27,7 +25,7 @@ describe("Title redux integration", () => {
       }
     });
     expect(props).toEqual({
-      title: undefined
+      publication: undefined
     });
   });
 });

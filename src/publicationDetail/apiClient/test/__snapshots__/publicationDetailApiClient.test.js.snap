@@ -7,7 +7,7 @@ Publication {
     "val": "Joshua Williamson",
   },
   "id": "the-flash-2016",
-  "image": "http://readcomicsonline.ru/uploads/manga/the-flash-2016/cover/cover_250x350.jpg",
+  "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/cover/cover_250x350.jpg",
   "issues": Array [
     IssueSummary {
       "id": "the-flash-2016-Annual1",

@@ -54,7 +54,7 @@ function extractIssuePages(publicationId, issueId, numberOfPages) {
     issuePages.push(
       new IssuePage(
         page,
-        `http://readcomicsonline.ru/uploads/manga/${publicationId}/chapters/${issueId}/${completePageNumber}.jpg`
+        `https://readcomicsonline.ru/uploads/manga/${publicationId}/chapters/${issueId}/${completePageNumber}.jpg`
       )
     );
   }

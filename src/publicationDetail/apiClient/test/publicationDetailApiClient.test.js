@@ -41,7 +41,7 @@ describe("Publication detail API Client", () => {
     expect(publication.id).toEqual(anyPublicationId);
     expect(publication.title).toEqual("The Flash (2016-)");
     expect(publication.image).toEqual(
-      "http://readcomicsonline.ru/uploads/manga/the-flash-2016/cover/cover_250x350.jpg"
+      "https://readcomicsonline.ru/uploads/manga/the-flash-2016/cover/cover_250x350.jpg"
     );
     expect(publication.status.val).toEqual("Ongoing");
     expect(publication.summary).toEqual(

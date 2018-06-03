@@ -51,11 +51,11 @@ describe("Feed API Client", () => {
     expect(firstPublication).toEqual(
       new PublicationSummary(
         "uuid",
-        "http://readcomicsonline.ru/comic/volcanosaurus-2017",
+        "https://readcomicsonline.ru/comic/volcanosaurus-2017",
         "volcanosaurus-2017",
         "Volcanosaurus (2017)",
         ["Volcanosaurus (2017) #2"],
-        "http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg",
+        "https://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg",
         "04/5/2018",
         "American Mythology"
       )

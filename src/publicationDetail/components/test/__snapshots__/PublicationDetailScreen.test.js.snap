@@ -174,6 +174,44 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
           </p>
         </div>
       </div>
+      <div
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <a
+          href="https://panels.app"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="https://panels.app"
+            height="60"
+            src="panelsLogo.svg"
+            target="_blank"
+          />
+        </a>
+      </div>
+      <p
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Download any issue from the issues lists and read it using
+         
+        <a
+          href="https://panels.app"
+          target="_blank"
+        >
+          Panels
+        </a>
+        , the best comic reader in the market.
+         
+      </p>
       <List>
         <ListItem
           key="1"

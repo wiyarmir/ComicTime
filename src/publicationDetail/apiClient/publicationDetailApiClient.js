@@ -52,7 +52,7 @@ function extractPublicationFromPage(id, htmlPage) {
   return Right(
     new Publication(
       id,
-      image,
+      image.replace("http", "https"),
       title,
       status,
       summary,

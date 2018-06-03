@@ -2,6 +2,8 @@ const translations = {
   translations: {
     appLogo: "Comic Time comicTimeLogo",
     appName: "Comic Time",
+    appDescription:
+      "Allow any user to easily read comics, without any prerequisites. Imagination will take you everywhere!",
     publicationDetailHeaderTitle: "Title:",
     publicationDetailHeaderStatus: "Status:",
     publicationDetailHeaderSummary: "Summary:",

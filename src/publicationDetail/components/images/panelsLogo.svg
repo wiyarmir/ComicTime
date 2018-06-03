@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="16.4179111%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#292929" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20-icon" transform="translate(-611.000000, -414.000000)">
+            <g id="Group" transform="translate(611.000000, 414.000000)">
+                <rect id="Rectangle-6-Copy-2" fill="url(#linearGradient-1)" x="0" y="0" width="76" height="76" rx="17"></rect>
+                <rect id="Rectangle-2-Copy-17" fill="#FFFFFF" opacity="0.699999988" x="20" y="16" width="20" height="44"></rect>
+                <path d="M49.1351351,16 C57.3447733,16 64,22.2680135 64,30 C64,37.7319865 57.3447733,44 49.1351351,44 L20,44 L20,16 L49.1351351,16 Z" id="Combined-Shape-Copy-11" fill="#FFFFFF" opacity="0.75"></path>
+                <rect id="Rectangle-7-Copy-6" fill="#FFFFFF" x="20" y="16" width="20" height="28"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

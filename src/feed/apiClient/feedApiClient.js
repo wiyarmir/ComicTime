@@ -31,7 +31,9 @@ function extractPublications(page) {
   publicationsItems.each(function() {
     const publicationLoaded = cheerio.load(this);
     const publicationSummary = publicationLoaded("h3 a");
-    const publicationUrl = publicationSummary.attr("href");
+    const publicationUrl = publicationSummary
+      .attr("href")
+      .replace("http", "https");
     const publicationPath = publicationUrl.substring(
       publicationUrl.lastIndexOf("/") + 1,
       publicationUrl.length
@@ -76,5 +78,5 @@ function extractLastIssuesTitles(publicationLoaded) {
 }
 
 function extractCoverFromPublicationPath(publicationPath) {
-  return `http://readcomicsonline.ru/uploads/manga/${publicationPath}/cover/cover_250x350.jpg`;
+  return `https://readcomicsonline.ru/uploads/manga/${publicationPath}/cover/cover_250x350.jpg`;
 }

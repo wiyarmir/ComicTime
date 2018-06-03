@@ -15,6 +15,7 @@ import {
 } from "../../utils/windowUtils";
 import ArrowDownward from "material-ui/svg-icons/navigation/arrow-downward";
 import PublicationNotFound from "./PublicationNotFound";
+import panelsLogo from "./images/panelsLogo.svg";
 
 class PublicationDetailScreen extends React.Component {
   constructor(props) {
@@ -80,6 +81,7 @@ class PublicationDetailScreen extends React.Component {
     const { t } = this.props;
     const publicationImage = publication.image;
     const publicationTitle = publication.title;
+    const panelsUrl = "https://panels.app";
     return (
       <Scrollbars style={style.content}>
         <Paper style={style.paper}>
@@ -142,6 +144,22 @@ class PublicationDetailScreen extends React.Component {
               </p>
             </div>
           </div>
+          <div style={style.panelsLogo}>
+            <a href={panelsUrl} target="_blank" rel="noopener noreferrer">
+              <img
+                height="60"
+                src={panelsLogo}
+                alt={panelsUrl}
+                target={"_blank"}
+              />
+            </a>
+          </div>
+          <p style={style.usageInfo}>
+            Download any issue from the issues lists and read it using{" "}
+            <a href={panelsUrl} target={"_blank"}>
+              Panels
+            </a>, the best comic reader in the market.{" "}
+          </p>
           <List>
             {publication.issues.map(issue => {
               return (
@@ -193,7 +211,9 @@ class PublicationDetailScreen extends React.Component {
       },
       remarkableInfo: {
         textDecoration: "underline"
-      }
+      },
+      panelsLogo: { textAlign: "center" },
+      usageInfo: { textAlign: "center" }
     };
   }
 }

@@ -42,7 +42,7 @@ exports[`FeedScreen renders a list of publications if it is not loading 1`] = `
         Array [
           PublicationSummary {
             "id": "uuid1",
-            "image": "http://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg",
+            "image": "https://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg",
             "lastIssuesNumbers": Array [
               "#1",
             ],
@@ -53,11 +53,11 @@ exports[`FeedScreen renders a list of publications if it is not loading 1`] = `
             "publisher": "Marvel",
             "releaseDate": "20/1/2017",
             "title": "deadpool (2017)",
-            "url": "http://readcomicsonline.ru/comic/deadpool-2017",
+            "url": "https://readcomicsonline.ru/comic/deadpool-2017",
           },
           PublicationSummary {
             "id": "uuid2",
-            "image": "http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg",
+            "image": "https://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg",
             "lastIssuesNumbers": Array [
               "#2",
             ],

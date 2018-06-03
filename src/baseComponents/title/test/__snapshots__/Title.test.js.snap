@@ -3,11 +3,73 @@
 exports[`Title shows the app title by default if it's not configured 1`] = `
 <SideEffect(DocumentTitle)
   title="appName"
-/>
+>
+  <div>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <meta
+        charSet="utf-8"
+      />
+      <meta
+        content="appDescription"
+        name="description"
+      />
+      <meta
+        content="appName"
+        property="og:title"
+      />
+      <meta
+        content="appDescription"
+        property="og:description"
+      />
+      <meta
+        content="http://localhost/"
+        property="og:url"
+      />
+      <meta
+        content="logo.svg"
+        property="og:image"
+      />
+    </HelmetWrapper>
+  </div>
+</SideEffect(DocumentTitle)>
 `;
 
 exports[`Title shows the title prop instead of the app name if it's configured properly 1`] = `
 <SideEffect(DocumentTitle)
-  title="The Flash #1"
-/>
+  title="appName"
+>
+  <div>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <meta
+        charSet="utf-8"
+      />
+      <meta
+        content="appDescription"
+        name="description"
+      />
+      <meta
+        content="appName"
+        property="og:title"
+      />
+      <meta
+        content="appDescription"
+        property="og:description"
+      />
+      <meta
+        content="http://localhost/"
+        property="og:url"
+      />
+      <meta
+        content="logo.svg"
+        property="og:image"
+      />
+    </HelmetWrapper>
+  </div>
+</SideEffect(DocumentTitle)>
 `;

@@ -66,6 +66,10 @@ typings/
 # React distribution build
 /build
 
+# env variables
+.env.development
+.env.production
+
 # Firebase
 
 .firebaserc

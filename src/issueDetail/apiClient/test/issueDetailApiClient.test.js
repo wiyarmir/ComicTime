@@ -65,7 +65,7 @@ describe("Issue detail API Client", () => {
     const firstPage = issue.pages[0];
     expect(firstPage.number).toEqual(1);
     expect(firstPage.image).toEqual(
-      "http://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/01.jpg"
+      "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/01.jpg"
     );
   });
 

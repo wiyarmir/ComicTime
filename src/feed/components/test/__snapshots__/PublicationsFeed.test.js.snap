@@ -42,8 +42,8 @@ exports[`PublicationsFeed renders the publication feed based on the list of publ
     <LazyImage
       alt="deadpool (2017)"
       height={358.4}
-      placeholder="http://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg"
-      src="http://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg"
+      placeholder="https://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg"
+      src="https://readcomicsonline.ru/uploads/manga/deadpool-2017/cover/cover_250x350.jpg"
     />
   </GridTile>
   <GridTile
@@ -74,8 +74,8 @@ exports[`PublicationsFeed renders the publication feed based on the list of publ
     <LazyImage
       alt="Volcanosaurus (2017)"
       height={358.4}
-      placeholder="http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg"
-      src="http://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg"
+      placeholder="https://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg"
+      src="https://readcomicsonline.ru/uploads/manga/volcanosaurus-2017/cover/cover_250x350.jpg"
     />
   </GridTile>
 </GridList>
