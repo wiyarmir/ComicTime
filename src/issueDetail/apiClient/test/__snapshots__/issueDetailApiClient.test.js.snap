@@ -3,7 +3,7 @@
 exports[`Issue detail API Client returns an issue with all the pages found 1`] = `
 Issue {
   "id": "the-flash-2016-Annual1",
-  "numberOfPages": 20,
+  "numberOfPages": 43,
   "pages": Array [
     IssuePage {
       "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/01.jpg",
@@ -84,6 +84,98 @@ Issue {
     IssuePage {
       "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/20.jpg",
       "number": 20,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/21.jpg",
+      "number": 21,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/22.jpg",
+      "number": 22,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/23.jpg",
+      "number": 23,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/24.jpg",
+      "number": 24,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/25.jpg",
+      "number": 25,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/26.jpg",
+      "number": 26,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/27.jpg",
+      "number": 27,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/28.jpg",
+      "number": 28,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/29.jpg",
+      "number": 29,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/30.jpg",
+      "number": 30,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/31.jpg",
+      "number": 31,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/32.jpg",
+      "number": 32,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/33.jpg",
+      "number": 33,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/34.jpg",
+      "number": 34,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/35.jpg",
+      "number": 35,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/36.jpg",
+      "number": 36,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/37.jpg",
+      "number": 37,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/38.jpg",
+      "number": 38,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/39.jpg",
+      "number": 39,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/40.jpg",
+      "number": 40,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/41.jpg",
+      "number": 41,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/42.jpg",
+      "number": 42,
+    },
+    IssuePage {
+      "image": "https://readcomicsonline.ru/uploads/manga/the-flash-2016/chapters/Annual1/43.jpg",
+      "number": 43,
     },
   ],
   "publicationId": "the-flash-2016",

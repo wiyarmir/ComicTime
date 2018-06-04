@@ -34,10 +34,7 @@ function extractIssueFromPage(publicationId, issueId, htmlPage) {
   const title = loadedPage(".pager-cnt a")
     .first()
     .text();
-  const numberOfPages = parseInt(
-    loadedPage("#page-list").attr("data-size"),
-    10
-  );
+  const numberOfPages = loadedPage("option").length / 2;
   return new Issue(
     publicationId + "-" + issueId,
     publicationId,
