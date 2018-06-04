@@ -1,6 +1,6 @@
 # Comic Time design references
 
-As we don't have resources for this project we've decided to pick a random free logo using some online tools and also try to find a color palette using the same approach. We will improve this document as we refine our design.
+As we don't have resources for this project, a friend of us designed a logo (thank you so much [@luishj](https://twitter.com/luishj)) based on a color palette generated using a free tool. We will improve this document as we refine our design.
 
 ## Logo:
 

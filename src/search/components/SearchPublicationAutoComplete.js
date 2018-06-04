@@ -5,11 +5,14 @@ import { AutoComplete } from "material-ui";
 import { search } from "../search";
 import debounce from "lodash/debounce";
 import { withRouter } from "react-router";
+import { Maybe } from "monet";
+
 const style = {
   hint: { color: "rgba(255,255,255, 0.7)" },
   list: { textColor: "#000000" },
   color: "#ffffff"
 };
+
 class SearchPublicationAutoComplete extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +41,11 @@ class SearchPublicationAutoComplete extends React.Component {
         hintStyle={style.hint}
         menuProps={{ menuItemStyle: { color: "#000000" } }}
         filter={AutoComplete.fuzzyFilter}
-        onNewRequest={item => this.props.history.push(`/${item.value.id}`)}
+        onNewRequest={item => {
+          if (Maybe.fromNull(item.value).isSome()) {
+            this.props.history.push(`/${item.value.id}`);
+          }
+        }}
         openOnFocus={true}
       />
     );

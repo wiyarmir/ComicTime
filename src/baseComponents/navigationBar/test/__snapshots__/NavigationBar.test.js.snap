@@ -8,6 +8,11 @@ exports[`NavigationBar renders the navigation bar using the app logo as left ico
         disableTouchRipple={false}
         disabled={false}
         iconStyle={Object {}}
+        style={
+          Object {
+            "padding": "1",
+          }
+        }
         tooltipPosition="bottom-center"
         touch={false}
       >
