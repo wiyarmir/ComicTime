@@ -6,6 +6,9 @@ Allow any user to easily read comics, without any prerequisites. [Go to Comic Ti
 ![detail](./art/screencasts/detail.gif)
 ![search](./art/screencasts/search.gif)
 
+
+**Application logo designed by [@luishj](https://twitter.com/luishj)**
+
 ## Running this project:
 
 This repository is built on top of [React](https://reactjs.org/) and [Redux](https://redux.js.org/advanced/middleware) using [Yarn](https://yarnpkg.com/en/) for dependency management. Thanks to these tools you can easily run this project on your computer running the following commands:
@@ -26,6 +29,10 @@ yarn build
 **Remember, you'll have to execute ``yarn install`` first.**
 
 The execution of this command will generate a static site you can place anywhere inside the ``build`` folder.
+
+## Publish a new release:
+
+The repository is ready to be hosted on Firebase. To deploy a new version of the site you just need to initialize firebase by executing ``yarn firebase init`` and then execute the ``./release.sh``. This will build a new version of the app and will upload it to Firebase. Remember to review your ``.env.production`` configuration before releasing a new version of Comic Time :smiley:.
 
 ## Executing tests:
 

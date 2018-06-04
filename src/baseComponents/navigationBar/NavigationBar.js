@@ -9,6 +9,7 @@ import ComicTimeLogo from "../comicTimeLogo/ComicTimeLogo";
 import githubLogo from "../images/githubLogo.svg";
 import { translateComponent } from "../../i18n/i18n";
 import SearchPublicationAutoComplete from "../../search/components/SearchPublicationAutoComplete";
+
 const style = {
   position: "fixed",
   top: 0
@@ -104,7 +105,7 @@ class NavigationBar extends React.Component {
       );
     } else {
       return (
-        <IconButton>
+        <IconButton style={{ padding: "1" }}>
           <ComicTimeLogo />
         </IconButton>
       );
