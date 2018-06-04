@@ -16,7 +16,7 @@ const style = {
 class SearchPublicationAutoComplete extends React.Component {
   constructor(props) {
     super(props);
-    this.onSearch = debounce(this.props.onSearch, 500);
+    this.onSearch = debounce(this.props.onSearch, 300);
   }
 
   render() {
