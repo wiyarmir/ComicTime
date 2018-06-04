@@ -35,6 +35,7 @@ function initializeGoogleAnalytics() {
   }
   const trackingNumber = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_NUMBER;
   ReactGA.initialize(trackingNumber);
+  ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
 function initializeFonts() {
