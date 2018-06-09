@@ -2,8 +2,11 @@ import { get } from "../../apiClient/apiClient";
 import { Page, PublicationSummary } from "../model";
 import cheerio from "cheerio";
 import { v4 } from "node-uuid";
+import { trackEvent } from "../../analytics/stats";
+import { fetchPageEvent } from "../../analytics/events";
 
 export async function getFeedPage(page = 1) {
+  trackEvent(fetchPageEvent(page));
   return get(`/latest-release?page=${page}`).then(response => {
     return response.map(htmlPage =>
       extractPublicationsFromPage(page, htmlPage)

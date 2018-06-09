@@ -6,6 +6,8 @@ import { search } from "../search";
 import debounce from "lodash/debounce";
 import { withRouter } from "react-router";
 import { Maybe } from "monet";
+import { clickSearchResultEvent, searchEvent } from "../../analytics/events";
+import { trackEvent } from "../../analytics/stats";
 
 const style = {
   hint: { color: "rgba(255,255,255, 0.7)" },
@@ -43,7 +45,9 @@ class SearchPublicationAutoComplete extends React.Component {
         filter={AutoComplete.fuzzyFilter}
         onNewRequest={item => {
           if (Maybe.fromNull(item.value).isSome()) {
-            this.props.history.push(`/${item.value.id}`);
+            const publicationId = item.value.id;
+            trackEvent(clickSearchResultEvent(publicationId));
+            this.props.history.push(`/${publicationId}`);
           }
         }}
         openOnFocus={true}
@@ -68,6 +72,7 @@ function mapStateToProps(state) {
 export function mapPropsToDispatch(dispatch) {
   return {
     onSearch: text => {
+      trackEvent(searchEvent(text));
       dispatch(search(text));
     }
   };

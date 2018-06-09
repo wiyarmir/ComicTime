@@ -85,13 +85,7 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
         </div>
         <div>
           <p>
-            <strong
-              style={
-                Object {
-                  "textDecoration": "underline",
-                }
-              }
-            >
+            <strong>
               publicationDetailHeaderTitle
             </strong>
              
@@ -100,13 +94,7 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
         </div>
         <div>
           <p>
-            <strong
-              style={
-                Object {
-                  "textDecoration": "underline",
-                }
-              }
-            >
+            <strong>
               publicationDetailHeaderStatus
             </strong>
              
@@ -115,13 +103,7 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
         </div>
         <div>
           <p>
-            <strong
-              style={
-                Object {
-                  "textDecoration": "underline",
-                }
-              }
-            >
+            <strong>
               publicationDetailHeaderSummary
             </strong>
              
@@ -130,13 +112,7 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
         </div>
         <div>
           <p>
-            <strong
-              style={
-                Object {
-                  "textDecoration": "underline",
-                }
-              }
-            >
+            <strong>
               publicationDetailHeaderPublisher
             </strong>
              
@@ -145,13 +121,7 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
         </div>
         <div>
           <p>
-            <strong
-              style={
-                Object {
-                  "textDecoration": "underline",
-                }
-              }
-            >
+            <strong>
               publicationDetailHeaderReleaseDate
             </strong>
              
@@ -160,13 +130,7 @@ exports[`PublicationDetailScreen shows the publication information if it was loa
         </div>
         <div>
           <p>
-            <strong
-              style={
-                Object {
-                  "textDecoration": "underline",
-                }
-              }
-            >
+            <strong>
               publicationDetailHeaderAuthors
             </strong>
              

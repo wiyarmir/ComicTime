@@ -5,6 +5,7 @@ import FeedScreen from "../feed/components/FeedScreen";
 import PublicationDetailScreen from "../publicationDetail/components/PublicationDetailScreen";
 import Title from "../baseComponents/title/Title";
 import DownloadWidget from "../publicationDetail/components/DownloadWidget";
+import { withTracker } from "../analytics/stats";
 
 class App extends React.Component {
   render() {
@@ -13,11 +14,11 @@ class App extends React.Component {
         <BrowserRouter>
           <Switch>
             <div>
-              <Route exact path={INDEX} component={FeedScreen} />
+              <Route exact path={INDEX} component={withTracker(FeedScreen)} />
               <Route
                 exact
                 path={publicationDetail(":id")}
-                component={PublicationDetailScreen}
+                component={withTracker(PublicationDetailScreen)}
               />
               <DownloadWidget />
             </div>

@@ -16,6 +16,8 @@ import {
 import ArrowDownward from "material-ui/svg-icons/navigation/arrow-downward";
 import PublicationNotFound from "./PublicationNotFound";
 import panelsLogo from "./images/panelsLogo.svg";
+import { trackEvent } from "../../analytics/stats";
+import { downloadIssueEvent } from "../../analytics/events";
 
 class PublicationDetailScreen extends React.Component {
   constructor(props) {
@@ -97,49 +99,37 @@ class PublicationDetailScreen extends React.Component {
             </div>
             <div>
               <p>
-                <strong style={style.remarkableInfo}>
-                  {t("publicationDetailHeaderTitle")}
-                </strong>{" "}
+                <strong>{t("publicationDetailHeaderTitle")}</strong>{" "}
                 {publication.title}
               </p>
             </div>
             <div>
               <p>
-                <strong style={style.remarkableInfo}>
-                  {t("publicationDetailHeaderStatus")}
-                </strong>{" "}
+                <strong>{t("publicationDetailHeaderStatus")}</strong>{" "}
                 {publication.status.orSome("")}
               </p>
             </div>
             <div>
               <p>
-                <strong style={style.remarkableInfo}>
-                  {t("publicationDetailHeaderSummary")}
-                </strong>{" "}
+                <strong>{t("publicationDetailHeaderSummary")}</strong>{" "}
                 {publication.summary}
               </p>
             </div>
             <div>
               <p>
-                <strong style={style.remarkableInfo}>
-                  {t("publicationDetailHeaderPublisher")}
-                </strong>{" "}
+                <strong>{t("publicationDetailHeaderPublisher")}</strong>{" "}
                 {publication.publisher.orSome("")}
               </p>
             </div>
             <div>
               <p>
-                <strong style={style.remarkableInfo}>
-                  {t("publicationDetailHeaderReleaseDate")}
-                </strong>{" "}
+                <strong>{t("publicationDetailHeaderReleaseDate")}</strong>{" "}
                 {publication.releaseDate.orSome("")}
               </p>
             </div>
             <div>
               <p>
-                <strong style={style.remarkableInfo}>
-                  {t("publicationDetailHeaderAuthors")}
-                </strong>{" "}
+                <strong>{t("publicationDetailHeaderAuthors")}</strong>{" "}
                 {publication.authors.orSome("")}
               </p>
             </div>
@@ -209,9 +199,6 @@ class PublicationDetailScreen extends React.Component {
           this.state.width
         )
       },
-      remarkableInfo: {
-        textDecoration: "underline"
-      },
       panelsLogo: { textAlign: "center" },
       usageInfo: { textAlign: "center" }
     };
@@ -238,6 +225,7 @@ export function mapPropsToDispatch(dispatch) {
       dispatch(fetchPublicationById(publicationId));
     },
     onIssueClick: issue => {
+      trackEvent(downloadIssueEvent(issue.id));
       dispatch(downloadIssue(issue));
     }
   };

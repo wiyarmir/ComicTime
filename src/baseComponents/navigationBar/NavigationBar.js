@@ -9,6 +9,12 @@ import ComicTimeLogo from "../comicTimeLogo/ComicTimeLogo";
 import githubLogo from "../images/githubLogo.svg";
 import { translateComponent } from "../../i18n/i18n";
 import SearchPublicationAutoComplete from "../../search/components/SearchPublicationAutoComplete";
+import { trackEvent } from "../../analytics/stats";
+import {
+  clickBackEvent,
+  clickIndexEvent,
+  clickOnGitHubIconEvent
+} from "../../analytics/events";
 
 const style = {
   position: "fixed",
@@ -113,14 +119,22 @@ class NavigationBar extends React.Component {
   }
 
   onLeftIconButtonClick() {
+    const history = this.props.history;
     if (this.props.showBackButton === true) {
-      this.props.history.goBack();
+      trackEvent(clickBackEvent());
+      if (history.length <= 2) {
+        history.push(INDEX);
+      } else {
+        history.goBack();
+      }
     } else {
-      this.props.history.go(INDEX);
+      trackEvent(clickIndexEvent());
+      history.go(INDEX);
     }
   }
 
   openGitHubProjectPage() {
+    trackEvent(clickOnGitHubIconEvent());
     window.open("https://github.com/ComicTime/ComicTime", "_blank");
   }
 }

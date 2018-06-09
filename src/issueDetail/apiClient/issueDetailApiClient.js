@@ -7,6 +7,8 @@ import { formatNumberWithTwoDigits } from "../../utils/numberUtils";
 import { downloadFile } from "../../utils/jszipUtils";
 import { Right, Left } from "monet";
 import log from "loglevel";
+import { issueDownloadErrorEvent } from "../../analytics/events";
+import { trackEvent } from "../../analytics/stats";
 
 export async function getIssue(publicationId, issueId) {
   return get(`/comic/${publicationId}/${issueId}`).then(response => {
@@ -25,6 +27,7 @@ export async function downloadIssueAsCbzFile(issue, updateCallback) {
       });
     })
     .catch(() => {
+      trackEvent(issueDownloadErrorEvent(issue.id));
       return Left(fileName);
     });
 }

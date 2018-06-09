@@ -5,7 +5,6 @@ import App from "./app/App";
 import Raven from "raven-js";
 import registerServiceWorker from "./registerServiceWorker";
 import { productionEnvironment } from "./utils/environmentUtils";
-import ReactGA from "react-ga";
 import WebFont from "webfontloader";
 import "normalize.css";
 import { comicTimeStore } from "./app/comictTime";
@@ -17,7 +16,6 @@ import comicTimeTheme from "./theme";
 
 initializeFonts();
 initializeSentry();
-initializeGoogleAnalytics();
 renderApplication();
 registerServiceWorker();
 
@@ -27,15 +25,6 @@ function initializeSentry() {
   }
   const sentryKey = process.env.REACT_APP_SENTRY_KEY;
   Raven.config(sentryKey).install();
-}
-
-function initializeGoogleAnalytics() {
-  if (!productionEnvironment()) {
-    return;
-  }
-  const trackingNumber = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_NUMBER;
-  ReactGA.initialize(trackingNumber);
-  ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
 function initializeFonts() {
