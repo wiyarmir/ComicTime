@@ -30,7 +30,7 @@ class PublicationsFeed extends React.Component {
   }
 
   sizeStatus() {
-    return { width: window.innerWidth, height: window.innerHeight };
+    return { width: window.innerWidth };
   }
 
   render() {

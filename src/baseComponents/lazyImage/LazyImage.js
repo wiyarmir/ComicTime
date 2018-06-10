@@ -8,6 +8,10 @@ const style = {
 };
 
 class LazyImage extends React.Component {
+  shouldComponentUpdate(nextProps) {
+    return this.props.src !== nextProps.src;
+  }
+
   render() {
     const height = this.props.height;
     const customStyle = this.props.style || style;
