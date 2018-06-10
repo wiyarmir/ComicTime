@@ -55,7 +55,7 @@ If you are going to execute the repository test suite from IntelliJ remember to 
 
 ## Error reporting:
 
-Reporting errors or crashes as issues is always useful and worth it :bug: However, if we can find some errors and report it automatically our lives as developers will be easier. That's why this repository is configured to use [Sentry](https://sentry.io/) to report all the not handled exceptions for us. In order to configure Sentry to report errors for you only need to create two files named ``.env.development`` and ```.env.production`` in the root folder and add the following content:
+Reporting errors or crashes as issues is always useful and worth it :bug: However, if we can find some errors and report it automatically our lives as developers will be easier. That's why this repository is configured to use [Sentry](https://sentry.io/) to report all the not handled exceptions for us. In order to configure Sentry to report errors for you only need to create two files named ``.env.development`` and ``.env.production`` in the root folder and add the following content:
 
 ```
 REACT_APP_SENTRY_KEY = "YOUR SENTRY REFERENCE FOUND WHEN CREATING A NEW PROJECT"
@@ -65,7 +65,7 @@ You can find the the Sentry key after creating the project in their site.
 
 ## Analytics:
 
-Knowledge is power, and I'm sure we'd like to know how our users move around Comic Time. That's why we've configured [Google Analytics](https://analytics.google.com) and tracked every movement in our application. To configure Google Analytics to report stats for you only need to create two files named ``.env.development`` and ```.env.production`` in the root folder and add the following content:
+Knowledge is power, and I'm sure we'd like to know how our users move around Comic Time. That's why we've configured [Google Analytics](https://analytics.google.com) and tracked every movement in our application. To configure Google Analytics to report stats for you only need to create two files named ``.env.development`` and ``.env.production`` in the root folder and add the following content:
 
 ```
 REACT_APP_GOOGLE_ANALYTICS_TRACKING_NUMBER = "YOUR GOOGLE ANALYTICS TRACKING NUMBER"
