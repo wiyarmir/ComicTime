@@ -7,6 +7,7 @@ import { Maybe } from "monet";
 import { LinearProgress, IconButton } from "material-ui";
 import NavigationArrowDropDown from "material-ui/svg-icons/navigation/arrow-drop-down";
 import NavigationArrowDropUp from "material-ui/svg-icons/navigation/arrow-drop-up";
+import { Scrollbars } from "react-custom-scrollbars";
 
 const style = {
   downloadContainer: {
@@ -29,20 +30,24 @@ const style = {
   },
   downloadHeaderCounter: {
     float: "left",
-    marginLeft: "20px"
+    marginLeft: "20px",
+    cursor: "pointer"
   },
   downloadHeaderButton: {
     float: "right"
+  },
+  scrollableContainer: {
+    minHeight: "260px",
+    gridColumnStart: 1,
+    gridColumnEnd: 3
   },
   downloadList: {
     listStyle: "none",
     marginLeft: 20,
     marginRight: 20,
     marginTop: 10,
-    marginBottom: 10,
-    paddingLeft: 0,
-    gridColumnStart: 1,
-    gridColumnEnd: 3
+    marginBottom: 40,
+    paddingLeft: 0
   },
   downloadItemContainer: {
     display: "grid",
@@ -62,19 +67,24 @@ const style = {
 const initialState = {
   minimized: false
 };
+
 class DownloadWidget extends React.Component {
   constructor(props) {
     super(props);
     this.toggleMinimizedState = this.toggleMinimizedState.bind(this);
     this.state = initialState;
   }
+
   render() {
     const { t } = this.props;
     if (this.props.visible) {
       return (
         <div style={style.downloadContainer}>
           <div style={style.downloadHeader}>
-            <p style={style.downloadHeaderCounter}>
+            <p
+              style={style.downloadHeaderCounter}
+              onClick={this.toggleMinimizedState}
+            >
               {`${t("downloadWidgetCounterTitle")} ${
                 this.props.inProgressDownloadsCount
               }/${this.props.totalDownloads}`}
@@ -113,22 +123,24 @@ class DownloadWidget extends React.Component {
       return null;
     }
     return (
-      <ul style={style.downloadList}>
-        {this.props.issueDownloadsProgress.map(download => {
-          return (
-            <li key={download.issue.publicationId + download.issue.id}>
-              <div style={style.downloadItemContainer}>
-                <p style={style.downloadTitle}>{download.issue.title}</p>
-                <LinearProgress
-                  mode="determinate"
-                  value={download.progress * 100}
-                  style={style.downloadProgressBar}
-                />
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+      <Scrollbars style={style.scrollableContainer}>
+        <ul style={style.downloadList}>
+          {this.props.issueDownloadsProgress.map(download => {
+            return (
+              <li key={download.issue.publicationId + download.issue.id}>
+                <div style={style.downloadItemContainer}>
+                  <p style={style.downloadTitle}>{download.issue.title}</p>
+                  <LinearProgress
+                    mode="determinate"
+                    value={download.progress * 100}
+                    style={style.downloadProgressBar}
+                  />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </Scrollbars>
     );
   }
 }
